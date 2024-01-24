@@ -23,13 +23,13 @@ let mockProfile = Profile(
     fullName: "Asror Aliqulov",
     location: "Tashkent, Yangi Hayot",
     phoneNumber: "888888888",
-    role: [.employee(
+    role: .employee(
         currentStatus: .free,
         rating: nil,
         abilities: ["Swift", "SwiftUI", "SwiftData", "Mobile Design", "Figma"],
         completedJobsIds: nil,
         completedQuickHelpsIds: nil
-    )]
+    )
 )
 
 let mockPost = Post(

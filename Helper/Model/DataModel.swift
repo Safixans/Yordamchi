@@ -16,7 +16,7 @@ struct Profile: Codable {
     var fullName: String
     var location: String
     var phoneNumber: String
-    var role: [Role]
+    var role: Role
 }
 
 struct Post: Codable {
@@ -68,7 +68,7 @@ struct Review: Codable {
 //MARK: - enums
 
 enum Role: Codable {
-    case employer(
+   case employer(
         rating: Double?,
         postsIds: [String]?,
         quickHelpersIds: [String]?

@@ -16,7 +16,7 @@ struct Profile: Codable {
     var fullName: String
     var location: String
     var phoneNumber: String
-    var role: Role
+    var role: [Role]
 }
 
 struct Post: Codable {
@@ -57,9 +57,10 @@ struct QuickHelp: Codable {
 struct Review: Codable {
     var id: String
     var creatorId: String
+    var to: String
     
     var stars: Int
-    var comment: String
+    var comment: String?
     var relevantImages: [Data]?
 }
 

@@ -26,11 +26,12 @@ struct Post: Codable {
     var postPrivacyLevel: PostPrivacyLevel
     var jobName: String
     var jobDescription: String
+    var jobLocation: String
     var tags: [String]?
     var startingDate: Date?
     var approximateDuration: Int?
     var numberOfPeopleNeeded: Int?
-    var relevantImages: [Data]?
+    var relevantImages: [String]?
     var postStatus: PostStatus
 }
 
@@ -61,7 +62,7 @@ struct Review: Codable {
     
     var stars: Int
     var comment: String?
-    var relevantImages: [Data]?
+    var relevantImages: [String]?
 }
 
 //MARK: - enums
@@ -69,22 +70,22 @@ struct Review: Codable {
 enum Role: Codable {
     case employer(
         rating: Double?,
-        posts: [Post]?,
-        quickHelpers: [QuickHelp]?
+        postsIds: [String]?,
+        quickHelpersIds: [String]?
     )
     case employee(
         currentStatus: EmployeeStatus,
         rating: Double?,
         abilities: [String]?,
-        completedJobs: [Post]?,
-        completedQuickHelps: [QuickHelp]?
+        completedJobsIds: [String]?,
+        completedQuickHelpsIds: [String]?
     )
 }
 
 enum PostStatus: Codable {
-    case searching(appliedPeople: [Profile]?, acceptedPeople: [Profile]?)
-    case ongoing(workingPeople: [Profile]?)
-    case finished(workedPeople: [Profile]?, reviews: [Review]?)
+    case searching(appliedPeopleIds: [String]?, acceptedPeopleIds: [String]?)
+    case ongoing(workingPeopleIds: [String]?)
+    case finished(workedPeopleIds: [String]?, reviewsIds: [String]?)
 }
 
 enum PostPrivacyLevel: String, Codable {
@@ -92,7 +93,7 @@ enum PostPrivacyLevel: String, Codable {
     case `public`
 }
 enum EmployeeStatus: Codable {
-    case working(currentWork: Post)
+    case working(currentWorksId: String)
     case busy
     case free
 }

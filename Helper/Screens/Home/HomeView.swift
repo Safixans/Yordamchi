@@ -13,15 +13,23 @@ enum CardState {
 }
 
 struct HomeView: View {
-    
+    @State var searchTerm = ""
     var body: some View {
         NavigationStack {
             List {
-                ForEach(0..<19) { number in
-                    HStack {
-                        Circle()
-                            .frame(width: 60)
-                        Text("\(number)")
+                Section("Available Jobs") {
+                    ForEach(0..<19) { number in
+                        NavigationLink {
+                            EmptyView()
+                        } label: {
+                            VStack(alignment: .leading) {
+                                Text(mockPost.jobName)
+                                    .font(.title3)
+                                    .fontWeight(.semibold)
+                                Text(mockPost.jobLocation)
+                                    .foregroundStyle(.gray)
+                            }
+                        }
                     }
                 }
             }
@@ -30,7 +38,7 @@ struct HomeView: View {
                 ToolbarItem(placement: .topBarTrailing) {
                     NavigationLink {
                         ProfileView()
-                            .toolbar(.hidden, for: .tabBar)
+                            
                     } label: {
                         Image(systemName: "person.circle")
                     }

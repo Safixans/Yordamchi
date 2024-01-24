@@ -88,7 +88,7 @@ enum PostStatus: Codable {
     case finished(workedPeopleIds: [String]?, reviewsIds: [String]?)
 }
 
-enum PostPrivacyLevel: String, Codable {
+enum PostPrivacyLevel: String, Codable, CaseIterable {
     case `private`
     case `public`
 }

@@ -30,8 +30,8 @@ struct WelcomeView: View {
                     UIPageControl.appearance().pageIndicatorTintColor = .gray
                 }
                 HStack{
-                    Button{
-                        
+                    NavigationLink{
+                        SignUpView()
                     }label: {
                         Text("Sign Up")
                             .font(.title)
@@ -39,8 +39,8 @@ struct WelcomeView: View {
                     }
                     .buttonStyle(.bordered)
                     .padding(.trailing,50)
-                    Button{
-                        
+                    NavigationLink{
+                        LogInView()
                     }label: {
                         Text("Log In")
                             .font(.title)

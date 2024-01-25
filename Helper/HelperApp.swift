@@ -11,7 +11,7 @@ import SwiftUI
 struct HelperApp: App {
     var body: some Scene {
         WindowGroup {
-            HelperTabView()
+            WelcomeView()
         }
     }
 }

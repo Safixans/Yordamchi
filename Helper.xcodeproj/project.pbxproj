@@ -20,11 +20,13 @@
 		102BE7952B62011E00A0C98F /* CreateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102BE7942B62011E00A0C98F /* CreateViewModel.swift */; };
 		102BE7972B6271B300A0C98F /* InDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102BE7962B6271B300A0C98F /* InDetailView.swift */; };
 		10451E7B2B60D288005E91A0 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10451E7A2B60D288005E91A0 /* DataModel.swift */; };
+		DD9233802B627B5600425545 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92337F2B627B5600425545 /* SignUpView.swift */; };
+		DD9233822B627B6600425545 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9233812B627B6600425545 /* LogInView.swift */; };
+		DD9233832B6280D900425545 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD83EE2B62663500C4732A /* WelcomeView.swift */; };
 		DDDD83E72B62450100C4732A /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD83E62B62450100C4732A /* MockData.swift */; };
 		DDDD83E92B62466100C4732A /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD83E82B62466100C4732A /* PostsView.swift */; };
 		DDDD83EB2B62467A00C4732A /* QuickHelpsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD83EA2B62467A00C4732A /* QuickHelpsView.swift */; };
 		DDDD83ED2B62512500C4732A /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD83EC2B62512500C4732A /* MessagesView.swift */; };
-		DDDD83EF2B62663500C4732A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD83EE2B62663500C4732A /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		102BE7942B62011E00A0C98F /* CreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewModel.swift; sourceTree = "<group>"; };
 		102BE7962B6271B300A0C98F /* InDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InDetailView.swift; sourceTree = "<group>"; };
 		10451E7A2B60D288005E91A0 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		DD92337F2B627B5600425545 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		DD9233812B627B6600425545 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		DDDD83E62B62450100C4732A /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		DDDD83E82B62466100C4732A /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
 		DDDD83EA2B62467A00C4732A /* QuickHelpsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickHelpsView.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				DDDD83EE2B62663500C4732A /* WelcomeView.swift */,
+				DD92337F2B627B5600425545 /* SignUpView.swift */,
+				DD9233812B627B6600425545 /* LogInView.swift */,
 				1019997F2B5FCED4002ECC59 /* HelperTabView.swift */,
 				10451E7E2B612C04005E91A0 /* Profile */,
 				10451E7D2B612BF4005E91A0 /* Home */,
@@ -244,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDDD83E72B62450100C4732A /* MockData.swift in Sources */,
+				DD9233822B627B6600425545 /* LogInView.swift in Sources */,
 				DDDD83EB2B62467A00C4732A /* QuickHelpsView.swift in Sources */,
 				101999962B5FDEEF002ECC59 /* ProfileView.swift in Sources */,
 				DDDD83E92B62466100C4732A /* PostsView.swift in Sources */,
@@ -255,6 +262,8 @@
 				101999802B5FCED4002ECC59 /* HelperTabView.swift in Sources */,
 				102BE7972B6271B300A0C98F /* InDetailView.swift in Sources */,
 				1019997E2B5FCED4002ECC59 /* HelperApp.swift in Sources */,
+				DD9233832B6280D900425545 /* WelcomeView.swift in Sources */,
+				DD9233802B627B5600425545 /* SignUpView.swift in Sources */,
 				101999922B5FDAC0002ECC59 /* ChatView.swift in Sources */,
 				10451E7B2B60D288005E91A0 /* DataModel.swift in Sources */,
 				101999902B5FDAAD002ECC59 /* CreateView.swift in Sources */,

@@ -41,17 +41,6 @@ struct CreateView: View {
                 }
             }
             .navigationTitle("Create a Job")
-            .onChange(of: viewModel.relevantPhotos) {
-                Task {
-                    viewModel.selectedImages.removeAll()
-                    
-                    for item in viewModel.relevantPhotos {
-                        if let image = try? await item.loadTransferable(type: Image.self) {
-                            viewModel.selectedImages.append(image)
-                        }
-                    }
-                }
-            }
         }
     }
 }

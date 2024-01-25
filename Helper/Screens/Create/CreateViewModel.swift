@@ -14,7 +14,25 @@ class CreateViewModel {
     var isQuickHelp = true
     var jobName = ""
     var jobDescription = ""
-    var relevantPhotos = [PhotosPickerItem]()
-    var selectedImages = [Image]()
+    var relevantPhotos: [PhotosPickerItem] = [] {
+        didSet {
+            Task {
+                await updateSelectedImages()
+            }
+        }
+    }
+    var selectedImages: [Image] = []
     var necessaryPeople = ""
+    
+    private func updateSelectedImages() async {
+        var newImages: [Image] = []
+        for photoItem in relevantPhotos {
+            if let image = try? await photoItem.loadTransferable(type: Image.self) {
+                newImages.append(image)
+            }
+        }
+        DispatchQueue.main.async {
+            self.selectedImages = newImages
+        }
+    }
 }

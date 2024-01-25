@@ -22,6 +22,7 @@
 		DDDD83E72B62450100C4732A /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD83E62B62450100C4732A /* MockData.swift */; };
 		DDDD83E92B62466100C4732A /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD83E82B62466100C4732A /* PostsView.swift */; };
 		DDDD83EB2B62467A00C4732A /* QuickHelpsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD83EA2B62467A00C4732A /* QuickHelpsView.swift */; };
+		DDDD83ED2B62512500C4732A /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD83EC2B62512500C4732A /* MessagesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		DDDD83E62B62450100C4732A /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		DDDD83E82B62466100C4732A /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
 		DDDD83EA2B62467A00C4732A /* QuickHelpsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickHelpsView.swift; sourceTree = "<group>"; };
+		DDDD83EC2B62512500C4732A /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				101999912B5FDAC0002ECC59 /* ChatView.swift */,
+				DDDD83EC2B62512500C4732A /* MessagesView.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				DDDD83EB2B62467A00C4732A /* QuickHelpsView.swift in Sources */,
 				101999962B5FDEEF002ECC59 /* ProfileView.swift in Sources */,
 				DDDD83E92B62466100C4732A /* PostsView.swift in Sources */,
+				DDDD83ED2B62512500C4732A /* MessagesView.swift in Sources */,
 				101999942B5FDAE0002ECC59 /* LibraryView.swift in Sources */,
 				102BE7952B62011E00A0C98F /* CreateViewModel.swift in Sources */,
 				1019998E2B5FDA9F002ECC59 /* SearchView.swift in Sources */,

@@ -39,8 +39,26 @@ struct CreateView: View {
                         }
                     }
                 }
+                if !viewModel.isQuickHelp {
+                    Section("Aditional Information") {
+                        Toggle("Does it have starting date?", isOn: $viewModel.hasStartingDate)
+                        if viewModel.hasStartingDate {
+                            DatePicker("Specify the starting date", selection: $viewModel.startingDate)
+                        }
+                        Toggle("Does it have duration?", isOn: $viewModel.hasDuration)
+                        if viewModel.hasDuration {
+                            TextField("Duration", text: $viewModel.duration)
+                                .keyboardType(.numberPad)
+                        }
+                        Toggle("Do you want to target specific professions?", isOn: $viewModel.hasTags)
+                        if viewModel.hasTags {
+                            TextField("Separate professions with comma ','", text: $viewModel.tags)
+                        }
+                        
+                    }
+                }
             }
-            .navigationTitle("Create a Job")
+            .navigationTitle(viewModel.isQuickHelp ? "Call for Quic Help" : "Post a Job")
         }
     }
 }

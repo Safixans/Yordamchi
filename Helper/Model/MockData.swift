@@ -1,23 +1,11 @@
 //
-//  ViewModel.swift
+//  MockData.swift
 //  Helper
 //
-//  Created by Asror Aliqulov on 24/01/24.
+//  Created by Davron Abdukhakimov on 25/01/24.
 //
 
-import SwiftUI
-
-@Observable
-class ViewModel {
-    var profile: Profile
-    var posts: [Post]?
-    var quickHelps: [QuickHelp]?
-    var reviews: [Review]?
-    init(profile: Profile) {
-        self.profile = profile
-    }
-}
-
+import Foundation
 let mockProfile = Profile(
     id: String(UUID().uuidString),
     fullName: "Asror Aliqulov",
@@ -37,7 +25,7 @@ let mockPost = Post(
     creatorId: mockProfile.id,
     postPrivacyLevel: .public,
     jobName: "Java Backend",
-    jobDescription: "I need a backend Developer to handle all the backend stuff for me. These are the following that should be done by backend developer: create a sophisticated database for this app, create a cloud and run that database in that cloud, Create an API to use the databse with this app, make sure the images are not loaded on main thread to prevent the from crashing", 
+    jobDescription: "I need a backend Developer to handle all the backend stuff for me. These are the following that should be done by backend developer: create a sophisticated database for this app, create a cloud and run that database in that cloud, Create an API to use the databse with this app, make sure the images are not loaded on main thread to prevent the from crashing",
     jobLocation: "Tashkent, Mirzo Ulug'bek",
     numberOfPeopleNeeded: 2,
     postStatus: .searching(appliedPeopleIds: [mockProfile.id], acceptedPeopleIds: nil)

@@ -68,54 +68,16 @@ struct ProfileView: View {
                     case .asEmployee:
                         switch jobType {
                         case .post:
-                            posts
+                            PostsView()
                         case .quickHelp:
-                            quickHelps
+                            QuickHelpsView()
                         }
                     case .asEmployer:
                         switch jobType {
                         case .post:
-                            posts
+                            PostsView()
                         case .quickHelp:
-                            quickHelps
-                        }
-                    }
-                }
-            }
-        }
-    }
-    var posts: some View {
-        ForEach(0..<10) { _ in
-            NavigationLink {
-                EmptyView()
-            } label: {
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(mockPost.jobName)
-                        .font(.title3)
-                        .fontWeight(.semibold)
-                    HStack {
-                        ForEach(0..<4) { _ in
-                            Image(systemName: "star.fill")
-                                .foregroundStyle(.yellow)
-                        }
-                    }
-                }
-            }
-        }
-    }
-    var quickHelps: some View {
-        ForEach(0..<10) { _ in
-            NavigationLink {
-                EmptyView()
-            } label: {
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(mockQuicHelp.jobName)
-                        .font(.title3)
-                        .fontWeight(.semibold)
-                    HStack {
-                        ForEach(0..<5) { _ in
-                            Image(systemName: "star.fill")
-                                .foregroundStyle(.yellow)
+                            QuickHelpsView()
                         }
                     }
                 }
@@ -123,6 +85,7 @@ struct ProfileView: View {
         }
     }
 }
+
 
 #Preview {
     ProfileView()

@@ -21,7 +21,7 @@ struct CreateView: View {
                         .keyboardType(.numberPad)
                 }
                 Section("Description") {
-                    TextEditor(text: $viewModel.jobDescription)
+                    TextField("Description", text: $viewModel.jobDescription, axis: .vertical)
                 }
                 Section("Photos") {
                     PhotosPicker("Choose Relevant Photos", selection: $viewModel.relevantPhotos)

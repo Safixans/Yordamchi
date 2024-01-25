@@ -16,7 +16,7 @@ enum Tab {
 }
 
 struct HelperTabView: View {
-    @State private var currentTab: Tab?
+    @State private var currentTab: Tab = .home
     var body: some View {
         TabView(selection: $currentTab) {
             HomeView()

@@ -17,6 +17,7 @@
 		101999922B5FDAC0002ECC59 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101999912B5FDAC0002ECC59 /* ChatView.swift */; };
 		101999942B5FDAE0002ECC59 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101999932B5FDAE0002ECC59 /* LibraryView.swift */; };
 		101999962B5FDEEF002ECC59 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101999952B5FDEEF002ECC59 /* ProfileView.swift */; };
+		102BE7952B62011E00A0C98F /* CreateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102BE7942B62011E00A0C98F /* CreateViewModel.swift */; };
 		10451E7B2B60D288005E91A0 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10451E7A2B60D288005E91A0 /* DataModel.swift */; };
 		10451E852B612FAF005E91A0 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10451E842B612FAF005E91A0 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -33,6 +34,7 @@
 		101999912B5FDAC0002ECC59 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		101999932B5FDAE0002ECC59 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		101999952B5FDEEF002ECC59 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		102BE7942B62011E00A0C98F /* CreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewModel.swift; sourceTree = "<group>"; };
 		10451E7A2B60D288005E91A0 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		10451E842B612FAF005E91A0 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				1019998F2B5FDAAD002ECC59 /* CreateView.swift */,
+				102BE7942B62011E00A0C98F /* CreateViewModel.swift */,
 			);
 			path = Create;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				10451E852B612FAF005E91A0 /* ViewModel.swift in Sources */,
 				101999962B5FDEEF002ECC59 /* ProfileView.swift in Sources */,
 				101999942B5FDAE0002ECC59 /* LibraryView.swift in Sources */,
+				102BE7952B62011E00A0C98F /* CreateViewModel.swift in Sources */,
 				1019998E2B5FDA9F002ECC59 /* SearchView.swift in Sources */,
 				1019998C2B5FDA94002ECC59 /* HomeView.swift in Sources */,
 				101999802B5FCED4002ECC59 /* HelperTabView.swift in Sources */,

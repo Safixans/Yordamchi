@@ -22,7 +22,6 @@ struct ProfileView: View {
     @State var jobType: JobType = .post
     var body: some View {
         NavigationStack {
-            
             List {
                 Section {
                     ZStack() {
@@ -55,6 +54,13 @@ struct ProfileView: View {
                             Text(job.rawValue)
                                 .tag(job)
                         }
+                    }
+                    HStack {
+                        Text("Rating \(role.rawValue) for \(jobType.rawValue)")
+                        Spacer()
+                        Text("3.5")
+                        Image(systemName: "star.fill")
+                            .foregroundStyle(.yellow)
                     }
                 }
                 Section {

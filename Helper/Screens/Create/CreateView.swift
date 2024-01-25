@@ -9,32 +9,27 @@ import SwiftUI
 import PhotosUI
 
 struct CreateView: View {
-    @State var isQuickHelp = true
-    @State var jobName = ""
-    @State var jobDescription = ""
-    @State var relevantPhotos = [PhotosPickerItem]()
-    @State var selectedImages = [Image]()
-    @State var necessaryPeople = ""
+    @State var viewModel = CreateViewModel()
     var body: some View {
         NavigationStack {
             Form {
-                Toggle("Quick Help", isOn: $isQuickHelp)
+                Toggle("Quick Help", isOn: $viewModel.isQuickHelp)
                 
                 Section("Name") {
-                    TextField("Job Name", text: $jobName)
-                    TextField("Number of necessary poeple", text: $necessaryPeople)
+                    TextField("Job Name", text: $viewModel.jobName)
+                    TextField("Number of necessary poeple", text: $viewModel.necessaryPeople)
                         .keyboardType(.numberPad)
                 }
                 Section("Description") {
-                    TextEditor(text: $jobDescription)
+                    TextEditor(text: $viewModel.jobDescription)
                 }
                 Section("Photos") {
-                    PhotosPicker("Choose Relevant Photos", selection: $relevantPhotos)
-                    if !selectedImages.isEmpty {
+                    PhotosPicker("Choose Relevant Photos", selection: $viewModel.relevantPhotos)
+                    if !viewModel.selectedImages.isEmpty {
                         ScrollView(.horizontal) {
                             HStack {
-                                ForEach(0..<selectedImages.count, id: \.self) { index in
-                                    selectedImages[index]
+                                ForEach(0..<viewModel.selectedImages.count, id: \.self) { index in
+                                    viewModel.selectedImages[index]
                                         .resizable()
                                         .scaledToFill()
                                         .frame(width: 80, height: 80)
@@ -46,13 +41,13 @@ struct CreateView: View {
                 }
             }
             .navigationTitle("Create a Job")
-            .onChange(of: relevantPhotos) {
+            .onChange(of: viewModel.relevantPhotos) {
                 Task {
-                    selectedImages.removeAll()
+                    viewModel.selectedImages.removeAll()
                     
-                    for item in relevantPhotos {
+                    for item in viewModel.relevantPhotos {
                         if let image = try? await item.loadTransferable(type: Image.self) {
-                            selectedImages.append(image)
+                            viewModel.selectedImages.append(image)
                         }
                     }
                 }

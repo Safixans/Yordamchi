@@ -39,9 +39,9 @@ struct EmployeeResponse: Codable {
     var id: String
     var postId: String
     
-    var wage: Double
+    var wage: String
     var metric: String
-    var reasoning: String?
+    var reasoning: String
 }
 
 struct QuickHelp: Codable {
@@ -50,8 +50,8 @@ struct QuickHelp: Codable {
     
     var jobName: String
     var jobDesription: String
-    var numberOfPeopleNeeded: Int
-    var hourlyWage: Double
+    var numberOfPeopleNeeded: String
+    var hourlyWage: String
     var review: [Review]?
 }
 

@@ -36,8 +36,8 @@ let mockQuicHelp = QuickHelp(
     creatorId: mockProfile.id,
     jobName: "Need to carry bed to 5th floor",
     jobDesription: "I got 2 level bed, i need 4 people to carry it to the 4th floor via stairs. ",
-    numberOfPeopleNeeded: 4,
-    hourlyWage: 30000
+    numberOfPeopleNeeded: "4",
+    hourlyWage: "30000"
 )
 
 let mockReview = Review(
@@ -51,7 +51,7 @@ let mockReview = Review(
 let mockResponse = EmployeeResponse(
     id: String(UUID().uuidString),
     postId: mockPost.id,
-    wage: 500000,
-    metric: "hour",
+    wage: "",
+    metric: "",
     reasoning: "The job is very hard and 2 people might strucle to compelete it. If you don't want to increase the number of people this is my price for this job."
 )

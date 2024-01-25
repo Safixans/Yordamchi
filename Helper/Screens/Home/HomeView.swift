@@ -20,7 +20,7 @@ struct HomeView: View {
                 Section("Available Jobs") {
                     ForEach(0..<19) { number in
                         NavigationLink {
-                            EmptyView()
+                            InDetailView()
                         } label: {
                             VStack(alignment: .leading) {
                                 Text(mockPost.jobName)

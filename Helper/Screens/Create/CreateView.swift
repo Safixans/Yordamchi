@@ -10,6 +10,7 @@ import PhotosUI
 
 struct CreateView: View {
     @State var viewModel = CreateViewModel()
+    @FocusState var focus: CreateViewModel.Field?
     var body: some View {
         NavigationStack {
             Form {
@@ -17,14 +18,28 @@ struct CreateView: View {
                 
                 Section("Name") {
                     TextField("Job Name", text: $viewModel.jobName)
+                        .focused($focus, equals: .jobName)
+                        .onSubmit {
+                            focus = .necessaryPeople
+                        }
+                    
                     TextField("Number of necessary poeple", text: $viewModel.necessaryPeople)
                         .keyboardType(.numberPad)
+                        .focused($focus, equals: .necessaryPeople)
+                        .onSubmit {
+                            focus = .jobDescription
+                        }
                 }
                 Section("Description") {
                     TextField("Description", text: $viewModel.jobDescription, axis: .vertical)
+                        .focused($focus, equals: .jobDescription)
+                        .onSubmit {
+                            focus = .relevantPhotos
+                        }
                 }
                 Section("Photos") {
                     PhotosPicker("Choose Relevant Photos", selection: $viewModel.relevantPhotos)
+                        .focused($focus, equals: .relevantPhotos)
                     if !viewModel.selectedImages.isEmpty {
                         ScrollView(.horizontal) {
                             HStack {

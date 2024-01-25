@@ -11,6 +11,11 @@ import Observation
 
 @Observable
 class CreateViewModel {
+    
+    enum Field {
+       case jobName, jobDescription, relevantPhotos, necessaryPeople
+    }
+    
     var isQuickHelp = true
     var jobName = ""
     var jobDescription = ""

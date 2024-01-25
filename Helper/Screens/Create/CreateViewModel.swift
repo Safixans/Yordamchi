@@ -31,8 +31,7 @@ class CreateViewModel {
                 newImages.append(image)
             }
         }
-        DispatchQueue.main.async {
-            self.selectedImages = newImages
-        }
+        self.selectedImages = newImages
+        
     }
 }

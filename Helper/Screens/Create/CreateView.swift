@@ -43,7 +43,8 @@ struct CreateView: View {
                     Section("Aditional Information") {
                         Toggle("Does it have starting date?", isOn: $viewModel.hasStartingDate)
                         if viewModel.hasStartingDate {
-                            DatePicker("Specify the starting date", selection: $viewModel.startingDate)
+                            DatePicker("Specify the starting date", selection: $viewModel.startingDate, displayedComponents: .date)
+                                
                         }
                         Toggle("Does it have duration?", isOn: $viewModel.hasDuration)
                         if viewModel.hasDuration {

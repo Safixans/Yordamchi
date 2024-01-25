@@ -34,4 +34,13 @@ class CreateViewModel {
         self.selectedImages = newImages
         
     }
+    
+    // following are specific to posts only
+    
+    var hasStartingDate = false
+    var startingDate = Date()
+    var hasDuration = false
+    var duration = ""
+    var hasTags = false
+    var tags = ""
 }

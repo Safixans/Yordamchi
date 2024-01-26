@@ -8,12 +8,12 @@
 import SwiftUI
 
 enum SegmentedRole: String, CaseIterable {
-    case asEmployee = "As Employee"
-    case asEmployer = "As Employer"
+    case asEmployee = "ishchi"
+    case asEmployer = "ish beruvchi"
 }
 enum JobType: String, CaseIterable {
-    case post = "Post"
-    case quickHelp = "Quick Help"
+    case post = "ish e'loni"
+    case quickHelp = "tezkor yordamchi"
 }
 
 struct ProfileView: View {
@@ -37,26 +37,26 @@ struct ProfileView: View {
                     }
                 }
                 .listRowBackground(Color(.clear))
-                Section("Personal Information") {
+                Section("Shaxsiy Ma'lumotlari") {
                     Label(profile.fullName, systemImage: "person")
                     Label(profile.location, systemImage: "location")
                     Label(profile.phoneNumber, systemImage: "phone")
                 }
-                Section("History") {
-                    Picker("Role", selection: $role) {
+                Section("Tarix") {
+                    Picker("Roli", selection: $role) {
                         ForEach(SegmentedRole.allCases, id: \.rawValue) { role in
                             Text(role.rawValue)
                                 .tag(role)
                         }
                     }
-                    Picker("Job Type", selection: $jobType) {
+                    Picker("Ish turi", selection: $jobType) {
                         ForEach(JobType.allCases, id: \.rawValue) { job in
                             Text(job.rawValue)
                                 .tag(job)
                         }
                     }
                     HStack {
-                        Text("Rating \(role.rawValue) for \(jobType.rawValue)")
+                        Text("Bahosi \(role.rawValue) sifatida \(jobType.rawValue) ishi turi uchun")
                         Spacer()
                         Text("3.5")
                         Image(systemName: "star.fill")

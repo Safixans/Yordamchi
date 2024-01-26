@@ -17,7 +17,7 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             List {
-                Section("Available Jobs") {
+                Section("Bo'sh ish e'lonlari") {
                     ForEach(0..<19) { number in
                         NavigationLink {
                             InDetailView()
@@ -33,7 +33,7 @@ struct HomeView: View {
                     }
                 }
             }
-            .navigationTitle("Helper")
+            .navigationTitle("Yordamchi")
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     NavigationLink {

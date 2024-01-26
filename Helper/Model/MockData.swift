@@ -9,7 +9,7 @@ import Foundation
 let mockProfile = Profile(
     id: String(UUID().uuidString),
     fullName: "Asror Aliqulov",
-    location: "Tashkent, Yangi Hayot",
+    location: "Toshkent, Yangi Hayot",
     phoneNumber: "888888888",
     role: .employee(
         currentStatus: .free,
@@ -24,18 +24,18 @@ let mockPost = Post(
     id: String(UUID().uuidString),
     creatorId: mockProfile.id,
     postPrivacyLevel: .public,
-    jobName: "Java Backend",
-    jobDescription: "I need a backend Developer to handle all the backend stuff for me. These are the following that should be done by backend developer: create a sophisticated database for this app, create a cloud and run that database in that cloud, Create an API to use the databse with this app, make sure the images are not loaded on main thread to prevent the from crashing",
+    jobName: "Java Backend Developer kerak",
+    jobDescription: "Menga backend Developer kerak bo'lib, men uchun barcha ma'lumotlarni qayta ishlaydi. Bular backend ishlab chiqaruvchisi tomonidan bajarilishi kerak bo'lgan ishlar: ushbu ilova uchun murakkab ma'lumotlar bazasini yarating, bulut yarating va ushbu ma'lumotlar bazasini o'sha bulutda ishga tushiring, ushbu ilova yordamida ma'lumotlar bazasidan foydalanish uchun API yarating, tasvirlar yuklanmaganligiga ishonch hosil qiling. ishdan chiqishning oldini olish uchun asosiy ip",
     jobLocation: "Tashkent, Mirzo Ulug'bek",
-    numberOfPeopleNeeded: 2,
+    numberOfPeopleNeeded: 4,
     postStatus: .searching(appliedPeopleIds: [mockProfile.id], acceptedPeopleIds: nil)
 )
 
 let mockQuicHelp = QuickHelp(
     id: String(UUID().uuidString),
     creatorId: mockProfile.id,
-    jobName: "Need to carry bed to 5th floor",
-    jobDesription: "I got 2 level bed, i need 4 people to carry it to the 4th floor via stairs. ",
+    jobName: "To'shakni 5-qavatga olib borish kerak",
+    jobDesription: "Menda 2 darajali karavot bor, uni zinapoya orqali 4-qavatga olib chiqish uchun menga 4 kishi kerak.",
     numberOfPeopleNeeded: "4",
     hourlyWage: "30000"
 )
@@ -45,7 +45,7 @@ let mockReview = Review(
     creatorId: mockProfile.id,
     to: mockPost.id,
     stars: 4,
-    comment: "The work was good. They payed well. Keep Going and Thanks!"
+    comment: "Ish yaxshi edi. Ular yaxshi to'lashdi. Davom eting va rahmat!"
 )
 
 let mockResponse = EmployeeResponse(

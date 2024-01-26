@@ -1,0 +1,199 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "3" : {
+
+    },
+    "3.5" : {
+
+    },
+    "12:00" : {
+
+    },
+    "Accepted People" : {
+
+    },
+    "Aditional Information" : {
+
+    },
+    "Apply" : {
+
+    },
+    "Asror" : {
+
+    },
+    "Asror Aliqulov" : {
+
+    },
+    "Available Jobs" : {
+
+    },
+    "Call for Quic Help" : {
+
+    },
+    "Chat" : {
+
+    },
+    "Choose Relevant Photos" : {
+
+    },
+    "Continue" : {
+
+    },
+    "Create" : {
+
+    },
+    "Create Account" : {
+
+    },
+    "Creator" : {
+
+    },
+    "Description" : {
+
+    },
+    "Do you want to target specific professions?" : {
+
+    },
+    "Does it have duration?" : {
+
+    },
+    "Does it have starting date?" : {
+
+    },
+    "Duration" : {
+
+    },
+    "Email or username:" : {
+
+    },
+    "Email:" : {
+
+    },
+    "Enter your metric such as square meter or for whole job" : {
+
+    },
+    "Enter Your Offer" : {
+
+    },
+    "Explain why!" : {
+
+    },
+    "Full Name:" : {
+
+    },
+    "Hello Davron." : {
+
+    },
+    "Hello how are you?" : {
+
+    },
+    "Helper" : {
+
+    },
+    "History" : {
+
+    },
+    "Home" : {
+
+    },
+    "Job Information" : {
+
+    },
+    "Job Name" : {
+
+    },
+    "Job Type" : {
+
+    },
+    "Library" : {
+
+    },
+    "Library View" : {
+
+    },
+    "Location" : {
+
+    },
+    "Log In" : {
+
+    },
+    "Name" : {
+
+    },
+    "Number of necessary poeple" : {
+
+    },
+    "Password:" : {
+
+    },
+    "Personal Information" : {
+
+    },
+    "Photos" : {
+
+    },
+    "Post a Job" : {
+
+    },
+    "Price" : {
+
+    },
+    "Quick Help" : {
+
+    },
+    "Rating %@ for %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Rating %1$@ for %2$@"
+          }
+        }
+      }
+    },
+    "Role" : {
+
+    },
+    "Search" : {
+
+    },
+    "Search View" : {
+
+    },
+    "Separate professions with comma ','" : {
+
+    },
+    "Sign Up" : {
+
+    },
+    "Specify the starting date" : {
+
+    },
+    "Spots left:" : {
+
+    },
+    "Tab Content 1" : {
+
+    },
+    "Tab Content 2" : {
+
+    },
+    "Tab Content 3" : {
+
+    },
+    "Tab Label 1" : {
+
+    },
+    "Tab Label 2" : {
+
+    },
+    "Tab Label 3" : {
+
+    },
+    "Text" : {
+
+    }
+  },
+  "version" : "1.0"
+}

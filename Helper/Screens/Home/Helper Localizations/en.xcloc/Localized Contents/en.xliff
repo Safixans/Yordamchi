@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="Helper/Helper-InfoPlist.xcstrings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.2" build-num="15C500b"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>Helper</source>
+        <target state="new">Helper</target>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Helper/Localizable.xcstrings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.2" build-num="15C500b"/>
+    </header>
+    <body>
+      <trans-unit id="3" xml:space="preserve">
+        <source>3</source>
+        <target state="new">3</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="3.5" xml:space="preserve">
+        <source>3.5</source>
+        <target state="new">3.5</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="12:00" xml:space="preserve">
+        <source>12:00</source>
+        <target state="new">12:00</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Accepted People" xml:space="preserve">
+        <source>Accepted People</source>
+        <target state="new">Accepted People</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Aditional Information" xml:space="preserve">
+        <source>Aditional Information</source>
+        <target state="new">Aditional Information</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Apply" xml:space="preserve">
+        <source>Apply</source>
+        <target state="new">Apply</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Asror" xml:space="preserve">
+        <source>Asror</source>
+        <target state="new">Asror</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Asror Aliqulov" xml:space="preserve">
+        <source>Asror Aliqulov</source>
+        <target state="new">Asror Aliqulov</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Available Jobs" xml:space="preserve">
+        <source>Available Jobs</source>
+        <target state="new">Available Jobs</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Call for Quic Help" xml:space="preserve">
+        <source>Call for Quic Help</source>
+        <target state="new">Call for Quic Help</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Chat" xml:space="preserve">
+        <source>Chat</source>
+        <target state="new">Chat</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Choose Relevant Photos" xml:space="preserve">
+        <source>Choose Relevant Photos</source>
+        <target state="new">Choose Relevant Photos</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Continue" xml:space="preserve">
+        <source>Continue</source>
+        <target state="new">Continue</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Create" xml:space="preserve">
+        <source>Create</source>
+        <target state="new">Create</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Create Account" xml:space="preserve">
+        <source>Create Account</source>
+        <target state="new">Create Account</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Creator" xml:space="preserve">
+        <source>Creator</source>
+        <target state="new">Creator</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Description" xml:space="preserve">
+        <source>Description</source>
+        <target state="new">Description</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Do you want to target specific professions?" xml:space="preserve">
+        <source>Do you want to target specific professions?</source>
+        <target state="new">Do you want to target specific professions?</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Does it have duration?" xml:space="preserve">
+        <source>Does it have duration?</source>
+        <target state="new">Does it have duration?</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Does it have starting date?" xml:space="preserve">
+        <source>Does it have starting date?</source>
+        <target state="new">Does it have starting date?</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Duration" xml:space="preserve">
+        <source>Duration</source>
+        <target state="new">Duration</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Email or username:" xml:space="preserve">
+        <source>Email or username:</source>
+        <target state="new">Email or username:</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Email:" xml:space="preserve">
+        <source>Email:</source>
+        <target state="new">Email:</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enter Your Offer" xml:space="preserve">
+        <source>Enter Your Offer</source>
+        <target state="new">Enter Your Offer</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enter your metric such as square meter or for whole job" xml:space="preserve">
+        <source>Enter your metric such as square meter or for whole job</source>
+        <target state="new">Enter your metric such as square meter or for whole job</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Explain why!" xml:space="preserve">
+        <source>Explain why!</source>
+        <target state="new">Explain why!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Full Name:" xml:space="preserve">
+        <source>Full Name:</source>
+        <target state="new">Full Name:</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Hello Davron." xml:space="preserve">
+        <source>Hello Davron.</source>
+        <target state="new">Hello Davron.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Hello how are you?" xml:space="preserve">
+        <source>Hello how are you?</source>
+        <target state="new">Hello how are you?</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Helper" xml:space="preserve">
+        <source>Helper</source>
+        <target state="new">Helper</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="History" xml:space="preserve">
+        <source>History</source>
+        <target state="new">History</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Home" xml:space="preserve">
+        <source>Home</source>
+        <target state="new">Home</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Job Information" xml:space="preserve">
+        <source>Job Information</source>
+        <target state="new">Job Information</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Job Name" xml:space="preserve">
+        <source>Job Name</source>
+        <target state="new">Job Name</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Job Type" xml:space="preserve">
+        <source>Job Type</source>
+        <target state="new">Job Type</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Library" xml:space="preserve">
+        <source>Library</source>
+        <target state="new">Library</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Library View" xml:space="preserve">
+        <source>Library View</source>
+        <target state="new">Library View</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Location" xml:space="preserve">
+        <source>Location</source>
+        <target state="new">Location</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Log In" xml:space="preserve">
+        <source>Log In</source>
+        <target state="new">Log In</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Name" xml:space="preserve">
+        <source>Name</source>
+        <target state="new">Name</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Number of necessary poeple" xml:space="preserve">
+        <source>Number of necessary poeple</source>
+        <target state="new">Number of necessary poeple</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Password:" xml:space="preserve">
+        <source>Password:</source>
+        <target state="new">Password:</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Personal Information" xml:space="preserve">
+        <source>Personal Information</source>
+        <target state="new">Personal Information</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Photos" xml:space="preserve">
+        <source>Photos</source>
+        <target state="new">Photos</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Post a Job" xml:space="preserve">
+        <source>Post a Job</source>
+        <target state="new">Post a Job</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Price" xml:space="preserve">
+        <source>Price</source>
+        <target state="new">Price</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Quick Help" xml:space="preserve">
+        <source>Quick Help</source>
+        <target state="new">Quick Help</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Rating %@ for %@" xml:space="preserve">
+        <source>Rating %1$@ for %2$@</source>
+        <target state="new">Rating %1$@ for %2$@</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Role" xml:space="preserve">
+        <source>Role</source>
+        <target state="new">Role</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Search" xml:space="preserve">
+        <source>Search</source>
+        <target state="new">Search</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Search View" xml:space="preserve">
+        <source>Search View</source>
+        <target state="new">Search View</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Separate professions with comma ','" xml:space="preserve">
+        <source>Separate professions with comma ','</source>
+        <target state="new">Separate professions with comma ','</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Sign Up" xml:space="preserve">
+        <source>Sign Up</source>
+        <target state="new">Sign Up</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Specify the starting date" xml:space="preserve">
+        <source>Specify the starting date</source>
+        <target state="new">Specify the starting date</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Spots left:" xml:space="preserve">
+        <source>Spots left:</source>
+        <target state="new">Spots left:</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Tab Content 1" xml:space="preserve">
+        <source>Tab Content 1</source>
+        <target state="new">Tab Content 1</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Tab Content 2" xml:space="preserve">
+        <source>Tab Content 2</source>
+        <target state="new">Tab Content 2</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Tab Content 3" xml:space="preserve">
+        <source>Tab Content 3</source>
+        <target state="new">Tab Content 3</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Tab Label 1" xml:space="preserve">
+        <source>Tab Label 1</source>
+        <target state="new">Tab Label 1</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Tab Label 2" xml:space="preserve">
+        <source>Tab Label 2</source>
+        <target state="new">Tab Label 2</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Tab Label 3" xml:space="preserve">
+        <source>Tab Label 3</source>
+        <target state="new">Tab Label 3</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Text" xml:space="preserve">
+        <source>Text</source>
+        <target state="new">Text</target>
+        <note/>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

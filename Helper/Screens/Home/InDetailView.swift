@@ -18,20 +18,20 @@ struct InDetailView: View {
     var body: some View {
         NavigationStack {
             List {
-                Section("Creator") {
+                Section("Ish beruvchi") {
                     NavigationLink {
                         ProfileView()
                     } label: {
                         Label("Asror Aliqulov", systemImage: "person.circle")
                     }
                 }
-                Section("Job Information") {
+                Section("Ish ma'lumotlari") {
                     Text(post.jobName)
                     Text(post.jobDescription)
                 }
-                Section("Accepted People") {
+                Section("Qabul qilingan ishchilar") {
                     HStack {
-                        Text("Spots left:")
+                        Text("Qolgan o'rinlar soni:")
                             .fontWeight(.semibold)
                         Spacer()
                         Text("3")
@@ -47,13 +47,13 @@ struct InDetailView: View {
                     
                 }
                 
-                Section("Enter Your Offer") {
-                    TextField("Price", text: $response.wage)
+                Section("O'z bahoyingizni kiriting") {
+                    TextField("Narx", text: $response.wage)
                         .focused($focus, equals: .wage)
                         .onSubmit {
                             focus = .metric
                         }
-                    TextField("Enter your metric such as square meter or for whole job", text: $response.metric)
+                    TextField("", text: $response.metric)
                         .focused($focus, equals: .metric)
                         .onSubmit {
                             focus = .reason

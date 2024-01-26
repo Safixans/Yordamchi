@@ -40,6 +40,17 @@ struct CreateView: View {
                 Section("Photos") {
                     PhotosPicker("Choose Relevant Photos", selection: $viewModel.relevantPhotos)
                         .focused($focus, equals: .relevantPhotos)
+                        .onSubmit {
+                            if viewModel.hasStartingDate {
+                                focus = .startingDate
+                            } else if viewModel.hasDuration {
+                                focus = .duration
+                            } else if viewModel.hasTags {
+                                focus = .tags
+                            } else {
+                                print("Ready to submit")
+                            }
+                        }
                     if !viewModel.selectedImages.isEmpty {
                         ScrollView(.horizontal) {
                             HStack {
@@ -57,22 +68,52 @@ struct CreateView: View {
                 if !viewModel.isQuickHelp {
                     Section("Aditional Information") {
                         Toggle("Does it have starting date?", isOn: $viewModel.hasStartingDate)
+                            .onChange(of: viewModel.hasStartingDate) {
+                                if viewModel.hasStartingDate {
+                                    focus = .startingDate
+                                }
+                            }
                         if viewModel.hasStartingDate {
                             DatePicker("Specify the starting date", selection: $viewModel.startingDate, displayedComponents: .date)
+                                .focused($focus, equals: .startingDate)
                                 
                         }
                         Toggle("Does it have duration?", isOn: $viewModel.hasDuration)
+                            .onChange(of: viewModel.hasDuration) {
+                                if viewModel.hasDuration {
+                                    focus = .duration
+                                }
+                            }
                         if viewModel.hasDuration {
                             TextField("Duration", text: $viewModel.duration)
                                 .keyboardType(.numberPad)
+                                .focused($focus, equals: .duration)
                         }
                         Toggle("Do you want to target specific professions?", isOn: $viewModel.hasTags)
+                            .onChange(of: viewModel.hasTags) {
+                                if viewModel.hasTags {
+                                    focus = .tags
+                                }
+                            }
                         if viewModel.hasTags {
                             TextField("Separate professions with comma ','", text: $viewModel.tags)
+                                .focused($focus, equals: .tags)
                         }
                         
                     }
                 }
+                Button{
+                    
+                } label: {
+                    Text("Apply")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .frame(maxWidth: .infinity)
+                }
+                .buttonStyle(.borderedProminent)
+                .disabled(viewModel.canSubmit)
+                .listRowInsets(EdgeInsets())
+                .listRowBackground(Color.clear)
             }
             .navigationTitle(viewModel.isQuickHelp ? "Call for Quic Help" : "Post a Job")
         }

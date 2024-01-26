@@ -13,7 +13,21 @@ import Observation
 class CreateViewModel {
     
     enum Field {
-       case jobName, jobDescription, relevantPhotos, necessaryPeople
+       case jobName, jobDescription, relevantPhotos, necessaryPeople, duration, tags, startingDate
+    }
+    
+    var canSubmit: Bool {
+        if isQuickHelp {
+            return jobName.isEmpty || jobDescription.isEmpty
+        } else {
+            if hasDuration {
+                return jobName.isEmpty || jobDescription.isEmpty || duration.isEmpty
+            }
+            if hasTags {
+                return jobName.isEmpty || jobDescription.isEmpty || tags.isEmpty
+            }
+            return false
+        }
     }
     
     var isQuickHelp = true

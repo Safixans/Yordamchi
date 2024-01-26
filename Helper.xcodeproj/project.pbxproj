@@ -39,6 +39,7 @@
 		DDC29DA92B642A2300B4CE51 /* Andijon.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D992B642A2300B4CE51 /* Andijon.json */; };
 		DDC29DAA2B642A2300B4CE51 /* Qoraqalpog'iston.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D9A2B642A2300B4CE51 /* Qoraqalpog'iston.json */; };
 		DDC29DAB2B642A2300B4CE51 /* ToshkentShahri.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D9B2B642A2300B4CE51 /* ToshkentShahri.json */; };
+		DDC29DAE2B643C5800B4CE51 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = DDC29DAD2B643C5800B4CE51 /* SwiftyJSON */; };
 		DDDD83E72B62450100C4732A /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD83E62B62450100C4732A /* MockData.swift */; };
 		DDDD83E92B62466100C4732A /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD83E82B62466100C4732A /* PostsView.swift */; };
 		DDDD83EB2B62467A00C4732A /* QuickHelpsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD83EA2B62467A00C4732A /* QuickHelpsView.swift */; };
@@ -90,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDC29DAE2B643C5800B4CE51 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +253,9 @@
 			dependencies = (
 			);
 			name = Helper;
+			packageProductDependencies = (
+				DDC29DAD2B643C5800B4CE51 /* SwiftyJSON */,
+			);
 			productName = Helper;
 			productReference = 1019997A2B5FCED4002ECC59 /* Helper.app */;
 			productType = "com.apple.product-type.application";
@@ -279,6 +284,9 @@
 				Base,
 			);
 			mainGroup = 101999712B5FCED4002ECC59;
+			packageReferences = (
+				DDC29DAC2B643C5800B4CE51 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 1019997B2B5FCED4002ECC59 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -544,6 +552,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DDC29DAC2B643C5800B4CE51 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DDC29DAD2B643C5800B4CE51 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDC29DAC2B643C5800B4CE51 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 101999722B5FCED4002ECC59 /* Project object */;
 }

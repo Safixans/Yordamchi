@@ -41,16 +41,28 @@ struct SignUpView: View {
                 Section("Personal Information"){
                     TextField("Full Name:", text: $fullName)
                         .focused($focus, equals: .fullName)
+                        .onSubmit {
+                            focus = .location
+                        }
                     Picker("Location", selection: $location) {
                         ForEach(Location.allCases, id: \.rawValue) { city in
                             Text(city.rawValue)
                         }
                     }
+                    .focused($focus, equals: .location)
+                    .onSubmit {
+                        focus = .email
+                    }
                 }
                 Section {
                     TextField("Email:", text: $email)
+                        .focused($focus, equals: .email)
+                        .onSubmit {
+                            focus = .password
+                        }
                         
                     TextField("Password:", text: $password)
+                        .focused($focus, equals: .password)
                 }
                     
                 Button{

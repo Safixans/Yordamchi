@@ -8,20 +8,20 @@
 import SwiftUI
 
 enum Location: String, CaseIterable {
-    case tashkent = "Tashkent"
-    case tashkentRegion = "Tashkent Region"
-    case andijanRegion = "Andijan Region"
-    case bukharaRegion = "Bukhara Region"
-    case ferganaRegion = "Fergana Region"
-    case jizzakhRegion = "Jizzakh Region"
-    case karakalpakstan = "Karakalpakstan"
-    case namanganRegion = "Namangan Region"
-    case navoiyRegion = "Navoiy Region"
-    case samarkandRegion = "Samarkand Region"
-    case sirdaryoRegion = "Sirdaryo Region"
-    case surkhandaryaRegion = "Surkhandarya Region"
-    case syrdaryaRegion = "Syrdarya Region"
-    case khorezmRegion = "Khorezm Region"
+    case tashkent = "Toshkent shahri"
+    case tashkentRegion = "Toshkent viloyati"
+    case andijanRegion = "Andijon viloyati"
+    case bukharaRegion = "Buxoro viloyati"
+    case ferganaRegion = "Farg'ona viloyati"
+    case jizzakhRegion = "Jizzax viloyati"
+    case karakalpakstan = "Qoraqalpog'iston Respublikasi"
+    case namanganRegion = "Namangan viloyati"
+    case navoiyRegion = "Navoiy viloyati"
+    case samarkandRegion = "Samarkand viloyati"
+    case sirdaryoRegion = "Sirdaryo viloyati"
+    case surkhandaryaRegion = "Surxondaryo viloyati"
+    case qashkadaryaRegion = "Qashqadaryo viloyati"
+    case khorezmRegion = "Xorazm viloyati"
 }
 
 
@@ -38,15 +38,16 @@ struct SignUpView: View {
     var body: some View {
         NavigationStack{
             Form {
-                Section("Personal Information"){
-                    TextField("Full Name:", text: $fullName)
+                Section("Shaxsiy ma'lumotlar"){
+                    TextField("F.I.SH", text: $fullName)
                         .focused($focus, equals: .fullName)
                         .onSubmit {
                             focus = .location
                         }
-                    Picker("Location", selection: $location) {
+                    Picker("Yashash manzili", selection: $location) {
                         ForEach(Location.allCases, id: \.rawValue) { city in
                             Text(city.rawValue)
+                                .tag(city)
                         }
                     }
                     .focused($focus, equals: .location)
@@ -55,20 +56,20 @@ struct SignUpView: View {
                     }
                 }
                 Section {
-                    TextField("Email:", text: $email)
+                    TextField("Pochta manzili:", text: $email)
                         .focused($focus, equals: .email)
                         .onSubmit {
                             focus = .password
                         }
                         
-                    TextField("Password:", text: $password)
+                    TextField("Parol:", text: $password)
                         .focused($focus, equals: .password)
                 }
                     
                 Button{
                     
                 }label: {
-                    Text("Create Account")
+                    Text("Akkaunt yaratish")
                         .font(.title2)
                         .fontWeight(.semibold)
                         .frame(maxWidth: .infinity)
@@ -76,7 +77,7 @@ struct SignUpView: View {
                 .buttonStyle(.borderedProminent)
                 .listRowInsets(EdgeInsets())
             }
-            .navigationTitle("Sign Up")
+            .navigationTitle("Ro'yxatdan o'tish")
         }
     }
 }

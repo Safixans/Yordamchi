@@ -33,23 +33,23 @@ struct WelcomeView: View {
                     NavigationLink{
                         SignUpView()
                     }label: {
-                        Text("Sign Up")
-                            .font(.title)
+                        Text("Ro'yxatdan o'tish")
+                            .font(.title2)
                             .fontWeight(.semibold)
                     }
                     .buttonStyle(.bordered)
-                    .padding(.trailing,50)
+                    .padding(.trailing,30)
                     NavigationLink{
                         LogInView()
                     }label: {
-                        Text("Log In")
-                            .font(.title)
+                        Text("Kirish")
+                            .font(.title2)
                             .fontWeight(.semibold)
                     }
                     .buttonStyle(.borderedProminent)
                 }
             }
-            .navigationTitle("Helper")
+            .navigationTitle("Yordamchi")
             .navigationBarTitleDisplayMode(.inline)
         }
         .onReceive(timer){ _ in

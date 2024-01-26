@@ -20,6 +20,9 @@ class CreateViewModel {
         if isQuickHelp {
             return jobName.isEmpty || jobDescription.isEmpty
         } else {
+            if !hasDuration && !hasTags {
+                return jobName.isEmpty || jobDescription.isEmpty
+            }
             if hasDuration {
                 return jobName.isEmpty || jobDescription.isEmpty || duration.isEmpty
             }

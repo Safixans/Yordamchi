@@ -74,7 +74,12 @@ struct CreateView: View {
                                 }
                             }
                         if viewModel.hasStartingDate {
-                            DatePicker("Specify the starting date", selection: $viewModel.startingDate, displayedComponents: .date)
+                            DatePicker(
+                                "Specify the starting date",
+                                selection: $viewModel.startingDate,
+                                in: Date.now...,
+                                displayedComponents: .date
+                            )
                                 .focused($focus, equals: .startingDate)
                                 
                         }

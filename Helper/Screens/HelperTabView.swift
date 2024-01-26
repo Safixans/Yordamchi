@@ -20,19 +20,19 @@ struct HelperTabView: View {
     var body: some View {
         TabView(selection: $currentTab) {
             HomeView()
-                .tabItem { Label("Home", systemImage: "house") }
+                .tabItem { Label("Asosiy", systemImage: "house") }
                 .tag(Tab.home)
             SearchView()
-                .tabItem { Label("Search", systemImage: "magnifyingglass") }
+                .tabItem { Label("Qidirish", systemImage: "magnifyingglass") }
                 .tag(Tab.search)
             CreateView()
-                .tabItem { Label("Create", systemImage: "plus.circle") }
+                .tabItem { Label("Qo'shish", systemImage: "plus.circle") }
                 .tag(Tab.create)
             ChatView()
-                .tabItem { Label("Chat", systemImage: "message") }
+                .tabItem { Label("Xabarlar", systemImage: "message") }
                 .tag(Tab.chat)
             LibraryView()
-                .tabItem { Label("Library", systemImage: "mail.stack") }
+                .tabItem { Label("Resurslar", systemImage: "mail.stack") }
                 .tag(Tab.library)
             
         }

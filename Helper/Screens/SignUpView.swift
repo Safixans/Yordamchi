@@ -25,16 +25,22 @@ enum Location: String, CaseIterable {
 }
 
 
+
 struct SignUpView: View {
+    enum FocusField {
+        case fullName, location, email, password
+    }
     @State var fullName = ""
     @State var email = ""
     @State var password = ""
     @State var location: Location = .tashkent
+    @FocusState var focus: FocusField?
     var body: some View {
         NavigationStack{
             Form {
                 Section("Personal Information"){
                     TextField("Full Name:", text: $fullName)
+                        .focused($focus, equals: .fullName)
                     Picker("Location", selection: $location) {
                         ForEach(Location.allCases, id: \.rawValue) { city in
                             Text(city.rawValue)

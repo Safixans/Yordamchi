@@ -53,18 +53,18 @@ struct InDetailView: View {
                         .onSubmit {
                             focus = .metric
                         }
-                    TextField("", text: $response.metric)
+                    TextField("O'lchov birligi, misol uchun soatiga", text: $response.metric)
                         .focused($focus, equals: .metric)
                         .onSubmit {
                             focus = .reason
                         }
-                    TextField("Explain why!", text: $response.reasoning, axis: .vertical)
+                    TextField("Nima uchun bu narxga ishlashingizni izohlang!", text: $response.reasoning, axis: .vertical)
                         .focused($focus, equals: .reason)
                 }
                 Button {
                     print(response)
                 } label: {
-                    Text("Apply")
+                    Text("Ariza topshirish")
                         .font(.title2)
                         .fontWeight(.semibold)
                         .frame(maxWidth: .infinity)

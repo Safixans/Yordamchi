@@ -12,7 +12,7 @@ enum SegmentedRole: String, CaseIterable {
     case asEmployer = "ish beruvchi"
 }
 enum JobType: String, CaseIterable {
-    case post = "ish e'loni"
+    case post = "an'anaviy ish"
     case quickHelp = "tezkor yordamchi"
 }
 

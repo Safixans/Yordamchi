@@ -15,6 +15,7 @@ struct ChatView: View {
                     ForEach(0..<5){_ in
                         NavigationLink{
                             MessagesView()
+                                .toolbar(.hidden, for: .tabBar)
                         }label: {
                             ChatCell()
                                 .foregroundStyle(Color(UIColor.label))
@@ -24,7 +25,7 @@ struct ChatView: View {
                 }
                 .padding()
             }
-            .navigationTitle("Chat")
+            .navigationTitle("Xabarlar")
         }
     }
 }

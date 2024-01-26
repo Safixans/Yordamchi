@@ -37,34 +37,6 @@ struct CreateView: View {
                             focus = .relevantPhotos
                         }
                 }
-                Section("Rasmlar") {
-                    PhotosPicker("Kerakli fotosuratlar", selection: $viewModel.relevantPhotos)
-                        .focused($focus, equals: .relevantPhotos)
-                        .onSubmit {
-                            if viewModel.hasStartingDate {
-                                focus = .startingDate
-                            } else if viewModel.hasDuration {
-                                focus = .duration
-                            } else if viewModel.hasTags {
-                                focus = .tags
-                            } else {
-                                print("E'lon qilishga tayyor")
-                            }
-                        }
-                    if !viewModel.selectedImages.isEmpty {
-                        ScrollView(.horizontal) {
-                            HStack {
-                                ForEach(0..<viewModel.selectedImages.count, id: \.self) { index in
-                                    viewModel.selectedImages[index]
-                                        .resizable()
-                                        .scaledToFill()
-                                        .frame(width: 80, height: 80)
-                                        .clipShape(RoundedRectangle(cornerRadius: 12))
-                                }
-                            }
-                        }
-                    }
-                }
                 if !viewModel.isQuickHelp {
                     Section("Qo'shimcha ma'lumotlar") {
                         Toggle("Boshlanish vaqti ma'lummi?", isOn: $viewModel.hasStartingDate)

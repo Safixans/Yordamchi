@@ -33,7 +33,7 @@ struct MessagesView: View {
                     .padding()
                 }
                 HStack{
-                    TextField("Text", text: $text, axis: .vertical)
+                    TextField("Xabar", text: $text, axis: .vertical)
                         .padding(10)
                         .overlay(
                             RoundedRectangle(cornerRadius: 20)

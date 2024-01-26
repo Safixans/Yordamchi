@@ -23,6 +23,22 @@
 		DD9233802B627B5600425545 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92337F2B627B5600425545 /* SignUpView.swift */; };
 		DD9233822B627B6600425545 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9233812B627B6600425545 /* LogInView.swift */; };
 		DD9233832B6280D900425545 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD83EE2B62663500C4732A /* WelcomeView.swift */; };
+		DDC29D9C2B642A2300B4CE51 /* Namangan.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D8C2B642A2300B4CE51 /* Namangan.json */; };
+		DDC29D9D2B642A2300B4CE51 /* IshHaqiHududiy.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D8D2B642A2300B4CE51 /* IshHaqiHududiy.json */; };
+		DDC29D9E2B642A2300B4CE51 /* ToshkentViloyati.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D8E2B642A2300B4CE51 /* ToshkentViloyati.json */; };
+		DDC29D9F2B642A2300B4CE51 /* Sirdaryo.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D8F2B642A2300B4CE51 /* Sirdaryo.json */; };
+		DDC29DA02B642A2300B4CE51 /* Jizzax.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D902B642A2300B4CE51 /* Jizzax.json */; };
+		DDC29DA12B642A2300B4CE51 /* Qashqadaryo.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D912B642A2300B4CE51 /* Qashqadaryo.json */; };
+		DDC29DA22B642A2300B4CE51 /* Farg'ona.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D922B642A2300B4CE51 /* Farg'ona.json */; };
+		DDC29DA32B642A2300B4CE51 /* Samarqand.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D932B642A2300B4CE51 /* Samarqand.json */; };
+		DDC29DA42B642A2300B4CE51 /* Surxondaryo.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D942B642A2300B4CE51 /* Surxondaryo.json */; };
+		DDC29DA52B642A2300B4CE51 /* IshHaqiSohalar.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D952B642A2300B4CE51 /* IshHaqiSohalar.json */; };
+		DDC29DA62B642A2300B4CE51 /* Navoiy.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D962B642A2300B4CE51 /* Navoiy.json */; };
+		DDC29DA72B642A2300B4CE51 /* Xorazm.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D972B642A2300B4CE51 /* Xorazm.json */; };
+		DDC29DA82B642A2300B4CE51 /* Buxoro.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D982B642A2300B4CE51 /* Buxoro.json */; };
+		DDC29DA92B642A2300B4CE51 /* Andijon.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D992B642A2300B4CE51 /* Andijon.json */; };
+		DDC29DAA2B642A2300B4CE51 /* Qoraqalpog'iston.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D9A2B642A2300B4CE51 /* Qoraqalpog'iston.json */; };
+		DDC29DAB2B642A2300B4CE51 /* ToshkentShahri.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D9B2B642A2300B4CE51 /* ToshkentShahri.json */; };
 		DDDD83E72B62450100C4732A /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD83E62B62450100C4732A /* MockData.swift */; };
 		DDDD83E92B62466100C4732A /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD83E82B62466100C4732A /* PostsView.swift */; };
 		DDDD83EB2B62467A00C4732A /* QuickHelpsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD83EA2B62467A00C4732A /* QuickHelpsView.swift */; };
@@ -46,6 +62,22 @@
 		10451E7A2B60D288005E91A0 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		DD92337F2B627B5600425545 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		DD9233812B627B6600425545 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		DDC29D8C2B642A2300B4CE51 /* Namangan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Namangan.json; sourceTree = "<group>"; };
+		DDC29D8D2B642A2300B4CE51 /* IshHaqiHududiy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = IshHaqiHududiy.json; sourceTree = "<group>"; };
+		DDC29D8E2B642A2300B4CE51 /* ToshkentViloyati.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ToshkentViloyati.json; sourceTree = "<group>"; };
+		DDC29D8F2B642A2300B4CE51 /* Sirdaryo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Sirdaryo.json; sourceTree = "<group>"; };
+		DDC29D902B642A2300B4CE51 /* Jizzax.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Jizzax.json; sourceTree = "<group>"; };
+		DDC29D912B642A2300B4CE51 /* Qashqadaryo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Qashqadaryo.json; sourceTree = "<group>"; };
+		DDC29D922B642A2300B4CE51 /* Farg'ona.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Farg'ona.json"; sourceTree = "<group>"; };
+		DDC29D932B642A2300B4CE51 /* Samarqand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Samarqand.json; sourceTree = "<group>"; };
+		DDC29D942B642A2300B4CE51 /* Surxondaryo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Surxondaryo.json; sourceTree = "<group>"; };
+		DDC29D952B642A2300B4CE51 /* IshHaqiSohalar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = IshHaqiSohalar.json; sourceTree = "<group>"; };
+		DDC29D962B642A2300B4CE51 /* Navoiy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Navoiy.json; sourceTree = "<group>"; };
+		DDC29D972B642A2300B4CE51 /* Xorazm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Xorazm.json; sourceTree = "<group>"; };
+		DDC29D982B642A2300B4CE51 /* Buxoro.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Buxoro.json; sourceTree = "<group>"; };
+		DDC29D992B642A2300B4CE51 /* Andijon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Andijon.json; sourceTree = "<group>"; };
+		DDC29D9A2B642A2300B4CE51 /* Qoraqalpog'iston.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Qoraqalpog'iston.json"; sourceTree = "<group>"; };
+		DDC29D9B2B642A2300B4CE51 /* ToshkentShahri.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ToshkentShahri.json; sourceTree = "<group>"; };
 		DDDD83E62B62450100C4732A /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		DDDD83E82B62466100C4732A /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
 		DDDD83EA2B62467A00C4732A /* QuickHelpsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickHelpsView.swift; sourceTree = "<group>"; };
@@ -83,6 +115,7 @@
 		1019997C2B5FCED4002ECC59 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				DDC29D8B2B642A0900B4CE51 /* JSONFiles */,
 				1019997D2B5FCED4002ECC59 /* HelperApp.swift */,
 				10451E7C2B612BE5005E91A0 /* Screens */,
 				10451E832B612C6B005E91A0 /* Model */,
@@ -179,6 +212,29 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		DDC29D8B2B642A0900B4CE51 /* JSONFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DDC29D992B642A2300B4CE51 /* Andijon.json */,
+				DDC29D982B642A2300B4CE51 /* Buxoro.json */,
+				DDC29D922B642A2300B4CE51 /* Farg'ona.json */,
+				DDC29D8D2B642A2300B4CE51 /* IshHaqiHududiy.json */,
+				DDC29D952B642A2300B4CE51 /* IshHaqiSohalar.json */,
+				DDC29D902B642A2300B4CE51 /* Jizzax.json */,
+				DDC29D8C2B642A2300B4CE51 /* Namangan.json */,
+				DDC29D962B642A2300B4CE51 /* Navoiy.json */,
+				DDC29D912B642A2300B4CE51 /* Qashqadaryo.json */,
+				DDC29D9A2B642A2300B4CE51 /* Qoraqalpog'iston.json */,
+				DDC29D932B642A2300B4CE51 /* Samarqand.json */,
+				DDC29D8F2B642A2300B4CE51 /* Sirdaryo.json */,
+				DDC29D942B642A2300B4CE51 /* Surxondaryo.json */,
+				DDC29D9B2B642A2300B4CE51 /* ToshkentShahri.json */,
+				DDC29D8E2B642A2300B4CE51 /* ToshkentViloyati.json */,
+				DDC29D972B642A2300B4CE51 /* Xorazm.json */,
+			);
+			path = JSONFiles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,7 +293,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDC29DA52B642A2300B4CE51 /* IshHaqiSohalar.json in Resources */,
+				DDC29D9E2B642A2300B4CE51 /* ToshkentViloyati.json in Resources */,
 				101999852B5FCED6002ECC59 /* Preview Assets.xcassets in Resources */,
+				DDC29D9F2B642A2300B4CE51 /* Sirdaryo.json in Resources */,
+				DDC29DA02B642A2300B4CE51 /* Jizzax.json in Resources */,
+				DDC29DAA2B642A2300B4CE51 /* Qoraqalpog'iston.json in Resources */,
+				DDC29DA22B642A2300B4CE51 /* Farg'ona.json in Resources */,
+				DDC29DA82B642A2300B4CE51 /* Buxoro.json in Resources */,
+				DDC29DAB2B642A2300B4CE51 /* ToshkentShahri.json in Resources */,
+				DDC29DA92B642A2300B4CE51 /* Andijon.json in Resources */,
+				DDC29D9C2B642A2300B4CE51 /* Namangan.json in Resources */,
+				DDC29D9D2B642A2300B4CE51 /* IshHaqiHududiy.json in Resources */,
+				DDC29DA12B642A2300B4CE51 /* Qashqadaryo.json in Resources */,
+				DDC29DA42B642A2300B4CE51 /* Surxondaryo.json in Resources */,
+				DDC29DA72B642A2300B4CE51 /* Xorazm.json in Resources */,
+				DDC29DA62B642A2300B4CE51 /* Navoiy.json in Resources */,
+				DDC29DA32B642A2300B4CE51 /* Samarqand.json in Resources */,
 				101999822B5FCED6002ECC59 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

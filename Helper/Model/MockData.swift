@@ -53,5 +53,5 @@ let mockResponse = EmployeeResponse(
     postId: mockPost.id,
     wage: "",
     metric: "",
-    reasoning: "The job is very hard and 2 people might strucle to compelete it. If you don't want to increase the number of people this is my price for this job."
+    reasoning: ""
 )

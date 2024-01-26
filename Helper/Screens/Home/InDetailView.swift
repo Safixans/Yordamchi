@@ -7,9 +7,14 @@
 
 import SwiftUI
 
+enum Focused {
+    case wage, metric, reason
+}
+
 struct InDetailView: View {
     var post = mockPost
     @State var response = mockResponse
+    @FocusState var focus: Focused?
     var body: some View {
         NavigationStack {
             List {
@@ -44,8 +49,17 @@ struct InDetailView: View {
                 
                 Section("Enter Your Offer") {
                     TextField("Price", text: $response.wage)
+                        .focused($focus, equals: .wage)
+                        .onSubmit {
+                            focus = .metric
+                        }
                     TextField("Enter your metric such as square meter or for whole job", text: $response.metric)
+                        .focused($focus, equals: .metric)
+                        .onSubmit {
+                            focus = .reason
+                        }
                     TextField("Explain why!", text: $response.reasoning, axis: .vertical)
+                        .focused($focus, equals: .reason)
                 }
                 Button {
                     print(response)
@@ -57,6 +71,7 @@ struct InDetailView: View {
                 }
                 .disabled(response.wage.isEmpty || response.metric.isEmpty)
                 .buttonStyle(.borderedProminent)
+                .listRowInsets(EdgeInsets())
                 .listRowBackground(Color.clear)
             }
         }

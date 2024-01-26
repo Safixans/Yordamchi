@@ -31,7 +31,7 @@ struct HelperTabView: View {
             ChatView()
                 .tabItem { Label("Xabarlar", systemImage: "message") }
                 .tag(Tab.chat)
-            LibraryView()
+            ResourcesView()
                 .tabItem { Label("Resurslar", systemImage: "mail.stack") }
                 .tag(Tab.library)
             

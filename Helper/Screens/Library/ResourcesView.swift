@@ -10,26 +10,74 @@ import Charts
 import SwiftyJSON
 
 struct ResourcesView: View {
+    enum Sectors:String,CaseIterable{
+        case qishloq = "Qishloq, o'rmon vа bаliq xo'jаligi"
+        case togKon = "Tog`-kon sаnoаti vа ochiq konlаrni ishlаsh"
+        case ishlabChiqarish = "Ishlab chiqarish sanoati"
+        case qurilish = "Qurilish"
+        case ilmiy = "Professionаl, ilmiy vа texnik fаoliyat"
+        case boshqarish = "Boshqаrish bo'yichа fаoliyat vа yordаmchi xizmаtlаr ko'rsаtish"
+        case davlatBoshqaruvi = "Dаvlаt boshqаruvi vа mudofаа; mаjburiy ijtimoiy tа'minot"
+        case sanat = "Sаn'аt, ko'ngil ochish vа dаm olish"
+        case boshqa = "Boshqа turdаgi xizmаtlаr ko'rsаtish"
+        case elektr = "Elektr, gаz, bug` bilаn tа'minlаsh vа hаvoni konditsiyalаsh"
+        case suv = "Suv bilаn tа'minlаsh; kаnаlizаtsiya tizimi, chiqindilаrni yig`ish vа utilizаtsiya qilish"
+        case axborot = "Аxborot vа аloqа"
+        case sugurta = "Moliyaviy vа sug`urtа fаoliyati"
+        case tashish = "Tаshish vа sаqlаsh"
+        case yashash = "Yashаsh vа ovqаtlаnish bo'yichа xizmаtlаr"
+        case ulgurji = "Ulgurji vа chаkаnа sаvdo; motorli trаnsport vositаlаri vа mototsikllаrni tа'mirlаsh"
+        case kochmas = "Ko'chmаs mulk bilаn operаtsiyalа"
+        case talim = "Tа'lim"
+        case sogliq = "Sog`liqni sаqlаsh vа ijtimoiy xizmаtlаr ko'rsаtish"
+    }
     @State var text:String = ""
-    @State var sectors:[String] = []
+    let years = ["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022"]
     @State var amounts:[Double] = []
+    @State var selectedSector:Sectors = .qishloq
     var body: some View {
-        Chart {
-            ForEach(sectors.indices,id: \.self){index in
-                BarMark(
-                    x: .value("Sector", sectors[index]),
-                    y: .value("Amount", amounts[index])
-                )
-                .foregroundStyle(by: .value("Sector", sectors[index]))
-                .clipShape(RoundedRectangle(cornerRadius: 8))
-                .annotation {
-                    Text("\(amounts[index],specifier: "%.1f")")
-                        .font(.system(size: 8))
+        NavigationStack{
+            VStack{
+                HStack{
+                    Text("Sohani tanlang")
+                    Picker("Sohani tanlang", selection: $selectedSector) {
+                        ForEach(Sectors.allCases,id: \.self){sector in
+                            Text(sector.rawValue)
+                                .lineLimit(1)
+                                .tag(sector)
+                            
+                            
+                        }
+                        
+                    }
                 }
+                
+                Chart {
+                    if amounts.count == 13{
+                        ForEach(years.indices,id: \.self){index in
+                            BarMark(
+                                x: .value("Year", years[index]),
+                                y: .value("Amount", amounts[index])
+                            )
+                            .foregroundStyle(by: .value("Year", years[index]))
+                            .clipShape(RoundedRectangle(cornerRadius: 8))
+                            .annotation {
+                                Text("\(amounts[index],specifier: "%.1f")")
+                                    .font(.system(size: 8))
+                            }
+                        }
+                    }
+
+                    
+                }
+                .frame(height: 400)
             }
+            .padding()
             
         }
-        .padding()
+        .onChange(of: selectedSector) {
+            loadJSON(fileName: "ToshkentShahri")
+        }
         .onAppear{
             loadJSON(fileName: "ToshkentShahri")
         }
@@ -39,7 +87,7 @@ struct ResourcesView: View {
             do{
                 let data = try Data(contentsOf: url)
                 let json = try JSON(data: data)
-                getSectors(from: json)
+                getData(from: json)
             }
             catch{
                 print(error.localizedDescription)
@@ -49,13 +97,26 @@ struct ResourcesView: View {
             print("Unable to load the file")
         }
     }
-    func getSectors(from json: JSON){
+    func getData(from json: JSON){
         let datas = json[0]["data"]
+        amounts.removeAll()
         for data in datas.arrayValue{
-            var jsonString = data["Klassifikator"].stringValue
-            jsonString = jsonString.replacingOccurrences(of: "'", with: "`")
-            sectors.append(jsonString)
-            amounts.append(Double(data["2022"].stringValue)!)
+            if selectedSector.rawValue == data["Klassifikator"].stringValue{
+                amounts.append(Double(data["2010"].stringValue) ?? 0)
+                amounts.append(Double(data["2011"].stringValue)  ?? 0)
+                amounts.append(Double(data["2012"].stringValue) ?? 0)
+                amounts.append(Double(data["2013"].stringValue) ?? 0)
+                amounts.append(Double(data["2014"].stringValue) ?? 0)
+                amounts.append(Double(data["2015"].stringValue)  ?? 0)
+                amounts.append(Double(data["2016"].stringValue)  ?? 0)
+                amounts.append(Double(data["2017"].stringValue)  ?? 0)
+                amounts.append(Double(data["2018"].stringValue) ?? 0)
+                amounts.append(Double(data["2019"].stringValue) ?? 0)
+                amounts.append(Double(data["2020"].stringValue) ?? 0)
+                amounts.append(Double(data["2021"].stringValue) ?? 0)
+                amounts.append(Double(data["2022"].stringValue) ?? 0)
+                
+            }
         }
     }
 }

@@ -65,6 +65,10 @@ struct SignUpView: View {
                     TextField("Parol:", text: $password)
                         .focused($focus, equals: .password)
                 }
+                
+                Spacer()
+                    .listRowInsets(EdgeInsets())
+                    .listRowBackground(Color.clear)
                     
                 Button{
                     

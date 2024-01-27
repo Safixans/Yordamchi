@@ -8,7 +8,22 @@
 import SwiftUI
 import Charts
 import SwiftyJSON
-
+enum LocationJSON: String, CaseIterable {
+    case tashkent = "Toshkent shahri"
+    case tashkentRegion = "Toshkent viloyati"
+    case andijanRegion = "Andijon viloyati"
+    case bukharaRegion = "Buxoro viloyati"
+    case ferganaRegion = "Farg'ona viloyati"
+    case jizzakhRegion = "Jizzax viloyati"
+    case karakalpakstan = "Qoraqalpog'iston Respublikasi"
+    case namanganRegion = "Namangan viloyati"
+    case navoiyRegion = "Navoiy viloyati"
+    case samarkandRegion = "Samarkand viloyati"
+    case sirdaryoRegion = "Sirdaryo viloyati"
+    case surkhandaryaRegion = "Surxondaryo viloyati"
+    case qashkadaryaRegion = "Qashqadaryo viloyati"
+    case khorezmRegion = "Xorazm viloyati"
+}
 struct ResourcesView: View {
     enum Sectors:String,CaseIterable{
         case qishloq = "Qishloq, o'rmon vа bаliq xo'jаligi"
@@ -35,12 +50,25 @@ struct ResourcesView: View {
     let years = ["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022"]
     @State var amounts:[Double] = []
     @State var selectedSector:Sectors = .qishloq
+    @State var location:LocationJSON = .tashkent
     var body: some View {
         NavigationStack{
             VStack{
                 HStack{
-                    Text("Sohani tanlang")
-                    Picker("Sohani tanlang", selection: $selectedSector) {
+                    Text("Hududni tanlang:")
+                    Picker("", selection: $location) {
+                        ForEach(LocationJSON.allCases,id: \.self){location in
+                            Text(location.rawValue)
+                                .lineLimit(1)
+                                .tag(location)
+                        }
+                        
+                    }
+                    Spacer()
+                }
+                HStack{
+                    Text("Sohani tanlang:")
+                    Picker("", selection: $selectedSector) {
                         ForEach(Sectors.allCases,id: \.self){sector in
                             Text(sector.rawValue)
                                 .lineLimit(1)
@@ -50,6 +78,7 @@ struct ResourcesView: View {
                         }
                         
                     }
+                    Spacer()
                 }
                 
                 Chart {
@@ -75,11 +104,14 @@ struct ResourcesView: View {
             .padding()
             
         }
+        .onChange(of: location) {
+            loadJSON(fileName: location.rawValue)
+        }
         .onChange(of: selectedSector) {
-            loadJSON(fileName: "ToshkentShahri")
+            loadJSON(fileName: location.rawValue)
         }
         .onAppear{
-            loadJSON(fileName: "ToshkentShahri")
+            loadJSON(fileName: location.rawValue)
         }
     }
     func loadJSON(fileName:String){

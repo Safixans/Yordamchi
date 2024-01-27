@@ -20,25 +20,54 @@
 		102BE7952B62011E00A0C98F /* CreateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102BE7942B62011E00A0C98F /* CreateViewModel.swift */; };
 		102BE7972B6271B300A0C98F /* InDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102BE7962B6271B300A0C98F /* InDetailView.swift */; };
 		10451E7B2B60D288005E91A0 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10451E7A2B60D288005E91A0 /* DataModel.swift */; };
+		DD639F2C2B64E741003874FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD639F2B2B64E741003874FD /* GoogleService-Info.plist */; };
+		DD639F2F2B64E979003874FD /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = DD639F2E2B64E979003874FD /* FirebaseAnalytics */; };
+		DD639F312B64E979003874FD /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = DD639F302B64E979003874FD /* FirebaseAnalyticsOnDeviceConversion */; };
+		DD639F332B64E979003874FD /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DD639F322B64E979003874FD /* FirebaseAnalyticsSwift */; };
+		DD639F352B64E979003874FD /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = DD639F342B64E979003874FD /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		DD639F372B64E979003874FD /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = DD639F362B64E979003874FD /* FirebaseAppCheck */; };
+		DD639F392B64E979003874FD /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = DD639F382B64E979003874FD /* FirebaseAppDistribution-Beta */; };
+		DD639F3B2B64E979003874FD /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DD639F3A2B64E979003874FD /* FirebaseAuth */; };
+		DD639F3D2B64E979003874FD /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = DD639F3C2B64E979003874FD /* FirebaseAuthCombine-Community */; };
+		DD639F3F2B64E979003874FD /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = DD639F3E2B64E979003874FD /* FirebaseCrashlytics */; };
+		DD639F412B64E979003874FD /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = DD639F402B64E979003874FD /* FirebaseDatabase */; };
+		DD639F432B64E979003874FD /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DD639F422B64E979003874FD /* FirebaseDatabaseSwift */; };
+		DD639F452B64E979003874FD /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = DD639F442B64E979003874FD /* FirebaseDynamicLinks */; };
+		DD639F472B64E979003874FD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DD639F462B64E979003874FD /* FirebaseFirestore */; };
+		DD639F492B64E979003874FD /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = DD639F482B64E979003874FD /* FirebaseFirestoreCombine-Community */; };
+		DD639F4B2B64E979003874FD /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DD639F4A2B64E979003874FD /* FirebaseFirestoreSwift */; };
+		DD639F4D2B64E979003874FD /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = DD639F4C2B64E979003874FD /* FirebaseFunctions */; };
+		DD639F4F2B64E979003874FD /* FirebaseFunctionsCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = DD639F4E2B64E979003874FD /* FirebaseFunctionsCombine-Community */; };
+		DD639F512B64E979003874FD /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = DD639F502B64E979003874FD /* FirebaseInAppMessaging-Beta */; };
+		DD639F532B64E979003874FD /* FirebaseInAppMessagingSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = DD639F522B64E979003874FD /* FirebaseInAppMessagingSwift-Beta */; };
+		DD639F552B64E979003874FD /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = DD639F542B64E979003874FD /* FirebaseInstallations */; };
+		DD639F572B64E979003874FD /* FirebaseMLModelDownloader in Frameworks */ = {isa = PBXBuildFile; productRef = DD639F562B64E979003874FD /* FirebaseMLModelDownloader */; };
+		DD639F592B64E979003874FD /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = DD639F582B64E979003874FD /* FirebaseMessaging */; };
+		DD639F5B2B64E979003874FD /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = DD639F5A2B64E979003874FD /* FirebasePerformance */; };
+		DD639F5D2B64E979003874FD /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = DD639F5C2B64E979003874FD /* FirebaseRemoteConfig */; };
+		DD639F5F2B64E979003874FD /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DD639F5E2B64E979003874FD /* FirebaseRemoteConfigSwift */; };
+		DD639F612B64E979003874FD /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = DD639F602B64E979003874FD /* FirebaseStorage */; };
+		DD639F632B64E979003874FD /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = DD639F622B64E979003874FD /* FirebaseStorageCombine-Community */; };
+		DD639F652B64E9B0003874FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD639F642B64E9B0003874FD /* AppDelegate.swift */; };
 		DD9233802B627B5600425545 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92337F2B627B5600425545 /* SignUpView.swift */; };
 		DD9233822B627B6600425545 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9233812B627B6600425545 /* LogInView.swift */; };
 		DD9233832B6280D900425545 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD83EE2B62663500C4732A /* WelcomeView.swift */; };
-		DDC29D9C2B642A2300B4CE51 /* Namangan.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D8C2B642A2300B4CE51 /* Namangan.json */; };
+		DDC29D9C2B642A2300B4CE51 /* Namangan viloyati.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D8C2B642A2300B4CE51 /* Namangan viloyati.json */; };
 		DDC29D9D2B642A2300B4CE51 /* IshHaqiHududiy.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D8D2B642A2300B4CE51 /* IshHaqiHududiy.json */; };
-		DDC29D9E2B642A2300B4CE51 /* ToshkentViloyati.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D8E2B642A2300B4CE51 /* ToshkentViloyati.json */; };
-		DDC29D9F2B642A2300B4CE51 /* Sirdaryo.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D8F2B642A2300B4CE51 /* Sirdaryo.json */; };
-		DDC29DA02B642A2300B4CE51 /* Jizzax.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D902B642A2300B4CE51 /* Jizzax.json */; };
-		DDC29DA12B642A2300B4CE51 /* Qashqadaryo.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D912B642A2300B4CE51 /* Qashqadaryo.json */; };
-		DDC29DA22B642A2300B4CE51 /* Farg'ona.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D922B642A2300B4CE51 /* Farg'ona.json */; };
-		DDC29DA32B642A2300B4CE51 /* Samarqand.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D932B642A2300B4CE51 /* Samarqand.json */; };
-		DDC29DA42B642A2300B4CE51 /* Surxondaryo.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D942B642A2300B4CE51 /* Surxondaryo.json */; };
+		DDC29D9E2B642A2300B4CE51 /* Toshkent viloyati.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D8E2B642A2300B4CE51 /* Toshkent viloyati.json */; };
+		DDC29D9F2B642A2300B4CE51 /* Sirdaryo viloyati.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D8F2B642A2300B4CE51 /* Sirdaryo viloyati.json */; };
+		DDC29DA02B642A2300B4CE51 /* Jizzax viloyati.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D902B642A2300B4CE51 /* Jizzax viloyati.json */; };
+		DDC29DA12B642A2300B4CE51 /* Qashqadaryo viloyati.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D912B642A2300B4CE51 /* Qashqadaryo viloyati.json */; };
+		DDC29DA22B642A2300B4CE51 /* Farg'ona viloyati.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D922B642A2300B4CE51 /* Farg'ona viloyati.json */; };
+		DDC29DA32B642A2300B4CE51 /* Samarqand viloyati.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D932B642A2300B4CE51 /* Samarqand viloyati.json */; };
+		DDC29DA42B642A2300B4CE51 /* Surxondaryo viloyati.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D942B642A2300B4CE51 /* Surxondaryo viloyati.json */; };
 		DDC29DA52B642A2300B4CE51 /* IshHaqiSohalar.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D952B642A2300B4CE51 /* IshHaqiSohalar.json */; };
-		DDC29DA62B642A2300B4CE51 /* Navoiy.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D962B642A2300B4CE51 /* Navoiy.json */; };
-		DDC29DA72B642A2300B4CE51 /* Xorazm.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D972B642A2300B4CE51 /* Xorazm.json */; };
-		DDC29DA82B642A2300B4CE51 /* Buxoro.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D982B642A2300B4CE51 /* Buxoro.json */; };
-		DDC29DA92B642A2300B4CE51 /* Andijon.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D992B642A2300B4CE51 /* Andijon.json */; };
-		DDC29DAA2B642A2300B4CE51 /* Qoraqalpog'iston.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D9A2B642A2300B4CE51 /* Qoraqalpog'iston.json */; };
-		DDC29DAB2B642A2300B4CE51 /* ToshkentShahri.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D9B2B642A2300B4CE51 /* ToshkentShahri.json */; };
+		DDC29DA62B642A2300B4CE51 /* Navoiy viloyati.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D962B642A2300B4CE51 /* Navoiy viloyati.json */; };
+		DDC29DA72B642A2300B4CE51 /* Xorazm viloyati.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D972B642A2300B4CE51 /* Xorazm viloyati.json */; };
+		DDC29DA82B642A2300B4CE51 /* Buxoro viloyati.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D982B642A2300B4CE51 /* Buxoro viloyati.json */; };
+		DDC29DA92B642A2300B4CE51 /* Andijon viloyati.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D992B642A2300B4CE51 /* Andijon viloyati.json */; };
+		DDC29DAA2B642A2300B4CE51 /* Qoraqalpog'iston Respublikasi.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D9A2B642A2300B4CE51 /* Qoraqalpog'iston Respublikasi.json */; };
+		DDC29DAB2B642A2300B4CE51 /* Toshkent shahri.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D9B2B642A2300B4CE51 /* Toshkent shahri.json */; };
 		DDC29DAE2B643C5800B4CE51 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = DDC29DAD2B643C5800B4CE51 /* SwiftyJSON */; };
 		DDDD83E72B62450100C4732A /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD83E62B62450100C4732A /* MockData.swift */; };
 		DDDD83E92B62466100C4732A /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD83E82B62466100C4732A /* PostsView.swift */; };
@@ -61,24 +90,26 @@
 		102BE7942B62011E00A0C98F /* CreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewModel.swift; sourceTree = "<group>"; };
 		102BE7962B6271B300A0C98F /* InDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InDetailView.swift; sourceTree = "<group>"; };
 		10451E7A2B60D288005E91A0 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		DD639F2B2B64E741003874FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DD639F642B64E9B0003874FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD92337F2B627B5600425545 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		DD9233812B627B6600425545 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
-		DDC29D8C2B642A2300B4CE51 /* Namangan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Namangan.json; sourceTree = "<group>"; };
+		DDC29D8C2B642A2300B4CE51 /* Namangan viloyati.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Namangan viloyati.json"; sourceTree = "<group>"; };
 		DDC29D8D2B642A2300B4CE51 /* IshHaqiHududiy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = IshHaqiHududiy.json; sourceTree = "<group>"; };
-		DDC29D8E2B642A2300B4CE51 /* ToshkentViloyati.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ToshkentViloyati.json; sourceTree = "<group>"; };
-		DDC29D8F2B642A2300B4CE51 /* Sirdaryo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Sirdaryo.json; sourceTree = "<group>"; };
-		DDC29D902B642A2300B4CE51 /* Jizzax.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Jizzax.json; sourceTree = "<group>"; };
-		DDC29D912B642A2300B4CE51 /* Qashqadaryo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Qashqadaryo.json; sourceTree = "<group>"; };
-		DDC29D922B642A2300B4CE51 /* Farg'ona.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Farg'ona.json"; sourceTree = "<group>"; };
-		DDC29D932B642A2300B4CE51 /* Samarqand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Samarqand.json; sourceTree = "<group>"; };
-		DDC29D942B642A2300B4CE51 /* Surxondaryo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Surxondaryo.json; sourceTree = "<group>"; };
+		DDC29D8E2B642A2300B4CE51 /* Toshkent viloyati.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Toshkent viloyati.json"; sourceTree = "<group>"; };
+		DDC29D8F2B642A2300B4CE51 /* Sirdaryo viloyati.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Sirdaryo viloyati.json"; sourceTree = "<group>"; };
+		DDC29D902B642A2300B4CE51 /* Jizzax viloyati.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Jizzax viloyati.json"; sourceTree = "<group>"; };
+		DDC29D912B642A2300B4CE51 /* Qashqadaryo viloyati.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Qashqadaryo viloyati.json"; sourceTree = "<group>"; };
+		DDC29D922B642A2300B4CE51 /* Farg'ona viloyati.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Farg'ona viloyati.json"; sourceTree = "<group>"; };
+		DDC29D932B642A2300B4CE51 /* Samarqand viloyati.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Samarqand viloyati.json"; sourceTree = "<group>"; };
+		DDC29D942B642A2300B4CE51 /* Surxondaryo viloyati.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Surxondaryo viloyati.json"; sourceTree = "<group>"; };
 		DDC29D952B642A2300B4CE51 /* IshHaqiSohalar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = IshHaqiSohalar.json; sourceTree = "<group>"; };
-		DDC29D962B642A2300B4CE51 /* Navoiy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Navoiy.json; sourceTree = "<group>"; };
-		DDC29D972B642A2300B4CE51 /* Xorazm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Xorazm.json; sourceTree = "<group>"; };
-		DDC29D982B642A2300B4CE51 /* Buxoro.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Buxoro.json; sourceTree = "<group>"; };
-		DDC29D992B642A2300B4CE51 /* Andijon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Andijon.json; sourceTree = "<group>"; };
-		DDC29D9A2B642A2300B4CE51 /* Qoraqalpog'iston.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Qoraqalpog'iston.json"; sourceTree = "<group>"; };
-		DDC29D9B2B642A2300B4CE51 /* ToshkentShahri.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ToshkentShahri.json; sourceTree = "<group>"; };
+		DDC29D962B642A2300B4CE51 /* Navoiy viloyati.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Navoiy viloyati.json"; sourceTree = "<group>"; };
+		DDC29D972B642A2300B4CE51 /* Xorazm viloyati.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Xorazm viloyati.json"; sourceTree = "<group>"; };
+		DDC29D982B642A2300B4CE51 /* Buxoro viloyati.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Buxoro viloyati.json"; sourceTree = "<group>"; };
+		DDC29D992B642A2300B4CE51 /* Andijon viloyati.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Andijon viloyati.json"; sourceTree = "<group>"; };
+		DDC29D9A2B642A2300B4CE51 /* Qoraqalpog'iston Respublikasi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Qoraqalpog'iston Respublikasi.json"; sourceTree = "<group>"; };
+		DDC29D9B2B642A2300B4CE51 /* Toshkent shahri.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Toshkent shahri.json"; sourceTree = "<group>"; };
 		DDDD83E62B62450100C4732A /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		DDDD83E82B62466100C4732A /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
 		DDDD83EA2B62467A00C4732A /* QuickHelpsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickHelpsView.swift; sourceTree = "<group>"; };
@@ -91,7 +122,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD639F4D2B64E979003874FD /* FirebaseFunctions in Frameworks */,
+				DD639F432B64E979003874FD /* FirebaseDatabaseSwift in Frameworks */,
+				DD639F532B64E979003874FD /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
+				DD639F592B64E979003874FD /* FirebaseMessaging in Frameworks */,
+				DD639F392B64E979003874FD /* FirebaseAppDistribution-Beta in Frameworks */,
+				DD639F3D2B64E979003874FD /* FirebaseAuthCombine-Community in Frameworks */,
+				DD639F492B64E979003874FD /* FirebaseFirestoreCombine-Community in Frameworks */,
+				DD639F332B64E979003874FD /* FirebaseAnalyticsSwift in Frameworks */,
+				DD639F572B64E979003874FD /* FirebaseMLModelDownloader in Frameworks */,
+				DD639F352B64E979003874FD /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				DD639F2F2B64E979003874FD /* FirebaseAnalytics in Frameworks */,
+				DD639F4B2B64E979003874FD /* FirebaseFirestoreSwift in Frameworks */,
+				DD639F312B64E979003874FD /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				DD639F372B64E979003874FD /* FirebaseAppCheck in Frameworks */,
+				DD639F5B2B64E979003874FD /* FirebasePerformance in Frameworks */,
+				DD639F512B64E979003874FD /* FirebaseInAppMessaging-Beta in Frameworks */,
+				DD639F4F2B64E979003874FD /* FirebaseFunctionsCombine-Community in Frameworks */,
+				DD639F3F2B64E979003874FD /* FirebaseCrashlytics in Frameworks */,
+				DD639F552B64E979003874FD /* FirebaseInstallations in Frameworks */,
+				DD639F5D2B64E979003874FD /* FirebaseRemoteConfig in Frameworks */,
+				DD639F612B64E979003874FD /* FirebaseStorage in Frameworks */,
+				DD639F412B64E979003874FD /* FirebaseDatabase in Frameworks */,
+				DD639F632B64E979003874FD /* FirebaseStorageCombine-Community in Frameworks */,
 				DDC29DAE2B643C5800B4CE51 /* SwiftyJSON in Frameworks */,
+				DD639F3B2B64E979003874FD /* FirebaseAuth in Frameworks */,
+				DD639F452B64E979003874FD /* FirebaseDynamicLinks in Frameworks */,
+				DD639F472B64E979003874FD /* FirebaseFirestore in Frameworks */,
+				DD639F5F2B64E979003874FD /* FirebaseRemoteConfigSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,8 +175,10 @@
 		1019997C2B5FCED4002ECC59 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				DDC29D8B2B642A0900B4CE51 /* JSONFiles */,
 				1019997D2B5FCED4002ECC59 /* HelperApp.swift */,
+				DD639F642B64E9B0003874FD /* AppDelegate.swift */,
+				DD639F2B2B64E741003874FD /* GoogleService-Info.plist */,
+				DDC29D8B2B642A0900B4CE51 /* JSONFiles */,
 				10451E7C2B612BE5005E91A0 /* Screens */,
 				10451E832B612C6B005E91A0 /* Model */,
 				101999812B5FCED6002ECC59 /* Assets.xcassets */,
@@ -217,22 +277,22 @@
 		DDC29D8B2B642A0900B4CE51 /* JSONFiles */ = {
 			isa = PBXGroup;
 			children = (
-				DDC29D992B642A2300B4CE51 /* Andijon.json */,
-				DDC29D982B642A2300B4CE51 /* Buxoro.json */,
-				DDC29D922B642A2300B4CE51 /* Farg'ona.json */,
+				DDC29D992B642A2300B4CE51 /* Andijon viloyati.json */,
+				DDC29D982B642A2300B4CE51 /* Buxoro viloyati.json */,
+				DDC29D922B642A2300B4CE51 /* Farg'ona viloyati.json */,
 				DDC29D8D2B642A2300B4CE51 /* IshHaqiHududiy.json */,
 				DDC29D952B642A2300B4CE51 /* IshHaqiSohalar.json */,
-				DDC29D902B642A2300B4CE51 /* Jizzax.json */,
-				DDC29D8C2B642A2300B4CE51 /* Namangan.json */,
-				DDC29D962B642A2300B4CE51 /* Navoiy.json */,
-				DDC29D912B642A2300B4CE51 /* Qashqadaryo.json */,
-				DDC29D9A2B642A2300B4CE51 /* Qoraqalpog'iston.json */,
-				DDC29D932B642A2300B4CE51 /* Samarqand.json */,
-				DDC29D8F2B642A2300B4CE51 /* Sirdaryo.json */,
-				DDC29D942B642A2300B4CE51 /* Surxondaryo.json */,
-				DDC29D9B2B642A2300B4CE51 /* ToshkentShahri.json */,
-				DDC29D8E2B642A2300B4CE51 /* ToshkentViloyati.json */,
-				DDC29D972B642A2300B4CE51 /* Xorazm.json */,
+				DDC29D902B642A2300B4CE51 /* Jizzax viloyati.json */,
+				DDC29D8C2B642A2300B4CE51 /* Namangan viloyati.json */,
+				DDC29D962B642A2300B4CE51 /* Navoiy viloyati.json */,
+				DDC29D912B642A2300B4CE51 /* Qashqadaryo viloyati.json */,
+				DDC29D9A2B642A2300B4CE51 /* Qoraqalpog'iston Respublikasi.json */,
+				DDC29D932B642A2300B4CE51 /* Samarqand viloyati.json */,
+				DDC29D8F2B642A2300B4CE51 /* Sirdaryo viloyati.json */,
+				DDC29D942B642A2300B4CE51 /* Surxondaryo viloyati.json */,
+				DDC29D9B2B642A2300B4CE51 /* Toshkent shahri.json */,
+				DDC29D8E2B642A2300B4CE51 /* Toshkent viloyati.json */,
+				DDC29D972B642A2300B4CE51 /* Xorazm viloyati.json */,
 			);
 			path = JSONFiles;
 			sourceTree = "<group>";
@@ -255,6 +315,33 @@
 			name = Helper;
 			packageProductDependencies = (
 				DDC29DAD2B643C5800B4CE51 /* SwiftyJSON */,
+				DD639F2E2B64E979003874FD /* FirebaseAnalytics */,
+				DD639F302B64E979003874FD /* FirebaseAnalyticsOnDeviceConversion */,
+				DD639F322B64E979003874FD /* FirebaseAnalyticsSwift */,
+				DD639F342B64E979003874FD /* FirebaseAnalyticsWithoutAdIdSupport */,
+				DD639F362B64E979003874FD /* FirebaseAppCheck */,
+				DD639F382B64E979003874FD /* FirebaseAppDistribution-Beta */,
+				DD639F3A2B64E979003874FD /* FirebaseAuth */,
+				DD639F3C2B64E979003874FD /* FirebaseAuthCombine-Community */,
+				DD639F3E2B64E979003874FD /* FirebaseCrashlytics */,
+				DD639F402B64E979003874FD /* FirebaseDatabase */,
+				DD639F422B64E979003874FD /* FirebaseDatabaseSwift */,
+				DD639F442B64E979003874FD /* FirebaseDynamicLinks */,
+				DD639F462B64E979003874FD /* FirebaseFirestore */,
+				DD639F482B64E979003874FD /* FirebaseFirestoreCombine-Community */,
+				DD639F4A2B64E979003874FD /* FirebaseFirestoreSwift */,
+				DD639F4C2B64E979003874FD /* FirebaseFunctions */,
+				DD639F4E2B64E979003874FD /* FirebaseFunctionsCombine-Community */,
+				DD639F502B64E979003874FD /* FirebaseInAppMessaging-Beta */,
+				DD639F522B64E979003874FD /* FirebaseInAppMessagingSwift-Beta */,
+				DD639F542B64E979003874FD /* FirebaseInstallations */,
+				DD639F562B64E979003874FD /* FirebaseMLModelDownloader */,
+				DD639F582B64E979003874FD /* FirebaseMessaging */,
+				DD639F5A2B64E979003874FD /* FirebasePerformance */,
+				DD639F5C2B64E979003874FD /* FirebaseRemoteConfig */,
+				DD639F5E2B64E979003874FD /* FirebaseRemoteConfigSwift */,
+				DD639F602B64E979003874FD /* FirebaseStorage */,
+				DD639F622B64E979003874FD /* FirebaseStorageCombine-Community */,
 			);
 			productName = Helper;
 			productReference = 1019997A2B5FCED4002ECC59 /* Helper.app */;
@@ -286,6 +373,7 @@
 			mainGroup = 101999712B5FCED4002ECC59;
 			packageReferences = (
 				DDC29DAC2B643C5800B4CE51 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 1019997B2B5FCED4002ECC59 /* Products */;
 			projectDirPath = "";
@@ -302,22 +390,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDC29DA52B642A2300B4CE51 /* IshHaqiSohalar.json in Resources */,
-				DDC29D9E2B642A2300B4CE51 /* ToshkentViloyati.json in Resources */,
+				DDC29D9E2B642A2300B4CE51 /* Toshkent viloyati.json in Resources */,
 				101999852B5FCED6002ECC59 /* Preview Assets.xcassets in Resources */,
-				DDC29D9F2B642A2300B4CE51 /* Sirdaryo.json in Resources */,
-				DDC29DA02B642A2300B4CE51 /* Jizzax.json in Resources */,
-				DDC29DAA2B642A2300B4CE51 /* Qoraqalpog'iston.json in Resources */,
-				DDC29DA22B642A2300B4CE51 /* Farg'ona.json in Resources */,
-				DDC29DA82B642A2300B4CE51 /* Buxoro.json in Resources */,
-				DDC29DAB2B642A2300B4CE51 /* ToshkentShahri.json in Resources */,
-				DDC29DA92B642A2300B4CE51 /* Andijon.json in Resources */,
-				DDC29D9C2B642A2300B4CE51 /* Namangan.json in Resources */,
+				DDC29D9F2B642A2300B4CE51 /* Sirdaryo viloyati.json in Resources */,
+				DDC29DA02B642A2300B4CE51 /* Jizzax viloyati.json in Resources */,
+				DDC29DAA2B642A2300B4CE51 /* Qoraqalpog'iston Respublikasi.json in Resources */,
+				DDC29DA22B642A2300B4CE51 /* Farg'ona viloyati.json in Resources */,
+				DDC29DA82B642A2300B4CE51 /* Buxoro viloyati.json in Resources */,
+				DDC29DAB2B642A2300B4CE51 /* Toshkent shahri.json in Resources */,
+				DDC29DA92B642A2300B4CE51 /* Andijon viloyati.json in Resources */,
+				DDC29D9C2B642A2300B4CE51 /* Namangan viloyati.json in Resources */,
 				DDC29D9D2B642A2300B4CE51 /* IshHaqiHududiy.json in Resources */,
-				DDC29DA12B642A2300B4CE51 /* Qashqadaryo.json in Resources */,
-				DDC29DA42B642A2300B4CE51 /* Surxondaryo.json in Resources */,
-				DDC29DA72B642A2300B4CE51 /* Xorazm.json in Resources */,
-				DDC29DA62B642A2300B4CE51 /* Navoiy.json in Resources */,
-				DDC29DA32B642A2300B4CE51 /* Samarqand.json in Resources */,
+				DDC29DA12B642A2300B4CE51 /* Qashqadaryo viloyati.json in Resources */,
+				DDC29DA42B642A2300B4CE51 /* Surxondaryo viloyati.json in Resources */,
+				DD639F2C2B64E741003874FD /* GoogleService-Info.plist in Resources */,
+				DDC29DA72B642A2300B4CE51 /* Xorazm viloyati.json in Resources */,
+				DDC29DA62B642A2300B4CE51 /* Navoiy viloyati.json in Resources */,
+				DDC29DA32B642A2300B4CE51 /* Samarqand viloyati.json in Resources */,
 				101999822B5FCED6002ECC59 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,6 +420,7 @@
 			files = (
 				DDDD83E72B62450100C4732A /* MockData.swift in Sources */,
 				DD9233822B627B6600425545 /* LogInView.swift in Sources */,
+				DD639F652B64E9B0003874FD /* AppDelegate.swift in Sources */,
 				DDDD83EB2B62467A00C4732A /* QuickHelpsView.swift in Sources */,
 				101999962B5FDEEF002ECC59 /* ProfileView.swift in Sources */,
 				DDDD83E92B62466100C4732A /* PostsView.swift in Sources */,
@@ -554,6 +644,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.20.0;
+			};
+		};
 		DDC29DAC2B643C5800B4CE51 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
@@ -565,6 +663,141 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DD639F2E2B64E979003874FD /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		DD639F302B64E979003874FD /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		DD639F322B64E979003874FD /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		DD639F342B64E979003874FD /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		DD639F362B64E979003874FD /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		DD639F382B64E979003874FD /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		DD639F3A2B64E979003874FD /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		DD639F3C2B64E979003874FD /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		DD639F3E2B64E979003874FD /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		DD639F402B64E979003874FD /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		DD639F422B64E979003874FD /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		DD639F442B64E979003874FD /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDynamicLinks;
+		};
+		DD639F462B64E979003874FD /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		DD639F482B64E979003874FD /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		DD639F4A2B64E979003874FD /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		DD639F4C2B64E979003874FD /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		DD639F4E2B64E979003874FD /* FirebaseFunctionsCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFunctionsCombine-Community";
+		};
+		DD639F502B64E979003874FD /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		DD639F522B64E979003874FD /* FirebaseInAppMessagingSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessagingSwift-Beta";
+		};
+		DD639F542B64E979003874FD /* FirebaseInstallations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseInstallations;
+		};
+		DD639F562B64E979003874FD /* FirebaseMLModelDownloader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMLModelDownloader;
+		};
+		DD639F582B64E979003874FD /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		DD639F5A2B64E979003874FD /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+		DD639F5C2B64E979003874FD /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		DD639F5E2B64E979003874FD /* FirebaseRemoteConfigSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfigSwift;
+		};
+		DD639F602B64E979003874FD /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		DD639F622B64E979003874FD /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD639F2D2B64E979003874FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
 		DDC29DAD2B643C5800B4CE51 /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DDC29DAC2B643C5800B4CE51 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;

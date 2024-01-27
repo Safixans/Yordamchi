@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-
+import FirebaseAuth
+import FirebaseDatabase
 enum Location: String, CaseIterable {
     case tashkent = "Toshkent shahri"
     case tashkentRegion = "Toshkent viloyati"
@@ -28,13 +29,16 @@ enum Location: String, CaseIterable {
 
 struct SignUpView: View {
     enum FocusField {
-        case fullName, location, email, password
+        case fullName, location, email, password,phoneNumber
     }
     @State var fullName = ""
     @State var email = ""
     @State var password = ""
+    @State var phoneNumber = ""
     @State var location: Location = .tashkent
     @FocusState var focus: FocusField?
+    var ref = Database.database().reference()
+    @State var isEnter = false
     var body: some View {
         NavigationStack{
             Form {
@@ -42,8 +46,17 @@ struct SignUpView: View {
                     TextField("F.I.SH", text: $fullName)
                         .focused($focus, equals: .fullName)
                         .onSubmit {
-                            focus = .location
+                            focus = .phoneNumber
                         }
+                    HStack{
+                        Text("+998")
+                        TextField("Telefon raqami:", text: $phoneNumber)
+                            .focused($focus, equals: .phoneNumber)
+                            .onSubmit {
+                                focus = .location
+                            }
+                    }
+                    
                     Picker("Yashash manzili", selection: $location) {
                         ForEach(Location.allCases, id: \.rawValue) { city in
                             Text(city.rawValue)
@@ -71,6 +84,22 @@ struct SignUpView: View {
                     .listRowBackground(Color.clear)
                     
                 Button{
+                    Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+                        if let error{
+                            print(error.localizedDescription)
+                        }
+                        else{
+                            let dataToSave = [
+                                "id": authResult?.user.uid ?? "No id",
+                                "email":authResult?.user.email ?? "No email",
+                                "phoneNumber": "+998 \(phoneNumber)",
+                                "name":fullName,
+                                "address":location.rawValue,
+                            ]
+                            self.ref.child("users").setValue(dataToSave)
+                            isEnter = true
+                        }
+                    }
                     
                 }label: {
                     Text("Akkaunt yaratish")
@@ -82,6 +111,9 @@ struct SignUpView: View {
                 .listRowInsets(EdgeInsets())
             }
             .navigationTitle("Ro'yxatdan o'tish")
+        }
+        .fullScreenCover(isPresented: $isEnter){
+            HelperTabView()
         }
     }
 }

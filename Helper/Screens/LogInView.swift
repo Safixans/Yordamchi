@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct LogInView: View {
-    @State var emailOrUserName = ""
+    @State var email = ""
     @State var password = ""
     @FocusState var focus: FocusField?
-    
+    @State var isEnter = false
     enum FocusField {
         case email, password
     }
@@ -20,7 +21,7 @@ struct LogInView: View {
         NavigationStack{
             Form{
                 Section("Email"){
-                    TextField("Email or username:", text: $emailOrUserName)
+                    TextField("Email or username:", text: $email)
                         .focused($focus, equals: .email)
                         .onSubmit {
                             focus = .password
@@ -40,7 +41,14 @@ struct LogInView: View {
                     .listRowInsets(EdgeInsets())
                     .listRowBackground(Color.clear)
                 Button{
-                    
+                    Auth.auth().signIn(withEmail: email, password: password) {authResult, error in
+                        if let error{
+                            print(error.localizedDescription)
+                        }
+                        else{
+                            isEnter = true
+                        }
+                    }
                 }label: {
                     Text("Continue")
                         .font(.title2)
@@ -50,12 +58,13 @@ struct LogInView: View {
                 .buttonStyle(.borderedProminent)
                 .listRowInsets(EdgeInsets())
             }
-            .onAppear {
-                focus = .email
-            }
-            
             .navigationTitle("Log In")
-            
+        }
+        .fullScreenCover(isPresented: $isEnter){
+            HelperTabView()
+        }
+        .onAppear {
+            focus = .email
         }
     }
 }

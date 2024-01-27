@@ -9,28 +9,86 @@ import Foundation
 let posts = [mockPost1, mockPost2, mockPost3, mockPost4, mockPost5, mockPost6, mockPost7]
 let govPosts = [mockPost8, mockPost9, mockPost10]
 
-var MockLearnDatas = [
-    LearnModel(
+var VideoMockData = [
+    VideoModel(
         videoImage: "wordTutorial",
         videoTitle: "Microsoft Word 1 dars Dastur bilan tanishuv Asosiy sozlamalar Qo'shimcha kengaytmalar o'rnatish",
         publisher: "Samarqand davlat universiteti Kattaqo‘rg‘on filiali",
         publisherImage: "wordMaker", 
         videoURL: "https://youtu.be/GOU2_-8o1rI?feature=shared"
     ),
-    LearnModel(
+    VideoModel(
         videoImage: "excelTutorial",
         videoTitle: "1 ДАРС. EXCEL БИЛАН УМУМИЙ ТАНИШУВ. EXCEL БОШЛОВЧИЛАР УЧУН",
         publisher: "AkaExcel",
         publisherImage: "excelMaker",
         videoURL: "https://youtu.be/ujj_zLZfvYo?feature=shared"
     ),
-    LearnModel(
+    VideoModel(
         videoImage: "powerPointTutorial",
         videoTitle: "MS Power Point dasturini 1 soatda o'rganish | Taqdimot yaratish",
         publisher: "Kompyuter texnologiyalari, Axborot texnologiyalari",
         publisherImage: "powerPointMaker",
         videoURL: "https://youtu.be/aOwVwDHrdwQ?feature=shared"
     )
+]
+var CourseMockData = [
+    CourseModel(
+        videoImage: "businessCourse",
+        videoTitle: "Bosh direktordan biznes darslari",
+        publisher: "365 Careers",
+        videoURL: "https://www.udemy.com/course/mba-in-a-box-business-lessons-from-a-ceo/"
+    ),
+    CourseModel(
+        videoImage: "entrepreneurCourse",
+        videoTitle: "Tadbirkorning aqli - boylikka erishish yo'lini o'ylab ko'ring",
+        publisher: "Mark Timberlake",
+        videoURL: "https://www.udemy.com/course/the-mind-of-an-entrepreneur-think-your-way-to-wealth/"
+    )
+]
+var epamMockData = [
+    MessageModel(
+        text: "Salom, Xayrli kun",
+        isMe: true,
+        date: Date()
+    ),
+    MessageModel(
+        text: "Salom, Xayrli kun",
+        isMe: false,
+        date: Date()
+    ),
+    MessageModel(
+        text: "iOS dasturchilik ish o'rni bo'yicha murojaat qilayotgandim.",
+        isMe: true,
+        date: Date()
+    ),
+    MessageModel(
+        text: "Ish o'rni bo'yicha qanday ma'lumot olishni xohlaysiz?",
+        isMe: false,
+        date: Date()
+    ),
+]
+var argosMockData = [
+    MessageModel(
+        text: "Salom, Xayrli kun",
+        isMe: true,
+        date: Date()
+    ),
+    MessageModel(
+        text: "Salom, Xayrli kun",
+        isMe: false,
+        date: Date()
+    ),
+    MessageModel(
+        text: "Bosh buxgalter ish o'rni bo'yicha murojaat qilayotgandim.",
+        isMe: true,
+        date: Date()
+    ),
+    MessageModel(
+        text: "Ish o'rni bo'yicha qanday ma'lumot olishni xohlaysiz?",
+        isMe: false,
+        date: Date()
+    ),
 ]
 let mockProfile1 = Profile(
     id: String(UUID().uuidString),
@@ -46,6 +104,7 @@ let mockProfile1 = Profile(
         completedQuickHelpsIds: nil
     )
 )
+
 let mockProfile2 = Profile(
     id: UUID().uuidString,
     profilePhoto: "mockPhoto2",

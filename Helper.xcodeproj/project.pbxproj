@@ -74,7 +74,10 @@
 		DDC29DAA2B642A2300B4CE51 /* Qoraqalpog'iston Respublikasi.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D9A2B642A2300B4CE51 /* Qoraqalpog'iston Respublikasi.json */; };
 		DDC29DAB2B642A2300B4CE51 /* Toshkent shahri.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D9B2B642A2300B4CE51 /* Toshkent shahri.json */; };
 		DDC29DAE2B643C5800B4CE51 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = DDC29DAD2B643C5800B4CE51 /* SwiftyJSON */; };
-		DDF039332B6562C500672351 /* LearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF039322B6562C500672351 /* LearnView.swift */; };
+		DDF039332B6562C500672351 /* VideosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF039322B6562C500672351 /* VideosView.swift */; };
+		DDF039362B65B03200672351 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF039352B65B03200672351 /* Date+Ext.swift */; };
+		DDF039382B65BD2000672351 /* ContentSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF039372B65BD2000672351 /* ContentSelectionView.swift */; };
+		DDF0393A2B65BDB000672351 /* CoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF039392B65BDB000672351 /* CoursesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,7 +121,10 @@
 		DDC29D992B642A2300B4CE51 /* Andijon viloyati.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Andijon viloyati.json"; sourceTree = "<group>"; };
 		DDC29D9A2B642A2300B4CE51 /* Qoraqalpog'iston Respublikasi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Qoraqalpog'iston Respublikasi.json"; sourceTree = "<group>"; };
 		DDC29D9B2B642A2300B4CE51 /* Toshkent shahri.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Toshkent shahri.json"; sourceTree = "<group>"; };
-		DDF039322B6562C500672351 /* LearnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnView.swift; sourceTree = "<group>"; };
+		DDF039322B6562C500672351 /* VideosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosView.swift; sourceTree = "<group>"; };
+		DDF039352B65B03200672351 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		DDF039372B65BD2000672351 /* ContentSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSelectionView.swift; sourceTree = "<group>"; };
+		DDF039392B65BDB000672351 /* CoursesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +189,7 @@
 				DD639F642B64E9B0003874FD /* AppDelegate.swift */,
 				DD639F2B2B64E741003874FD /* GoogleService-Info.plist */,
 				101999812B5FCED6002ECC59 /* Assets.xcassets */,
+				DDF039342B65B01D00672351 /* Extensions */,
 				DD639F902B6516CE003874FD /* Model */,
 				DD639F662B65167E003874FD /* Screens */,
 				DDC29D8B2B642A0900B4CE51 /* JSONFiles */,
@@ -222,7 +229,9 @@
 			children = (
 				DD639F692B65167E003874FD /* HomeView.swift */,
 				DD639F6A2B65167E003874FD /* InDetailView.swift */,
-				DDF039322B6562C500672351 /* LearnView.swift */,
+				DDF039372B65BD2000672351 /* ContentSelectionView.swift */,
+				DDF039322B6562C500672351 /* VideosView.swift */,
+				DDF039392B65BDB000672351 /* CoursesView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -302,6 +311,14 @@
 				DDC29D972B642A2300B4CE51 /* Xorazm viloyati.json */,
 			);
 			path = JSONFiles;
+			sourceTree = "<group>";
+		};
+		DDF039342B65B01D00672351 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DDF039352B65B03200672351 /* Date+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,7 +443,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD639F8E2B65167F003874FD /* CreateView.swift in Sources */,
-				DDF039332B6562C500672351 /* LearnView.swift in Sources */,
+				DDF039332B6562C500672351 /* VideosView.swift in Sources */,
 				DD639F652B64E9B0003874FD /* AppDelegate.swift in Sources */,
 				DD639F8D2B65167F003874FD /* CreateViewModel.swift in Sources */,
 				DD639F8A2B65167F003874FD /* CompanyProfileView.swift in Sources */,
@@ -441,8 +458,11 @@
 				DD639F872B65167F003874FD /* SearchView.swift in Sources */,
 				DD639F852B65167F003874FD /* LogInView.swift in Sources */,
 				DD639F832B65167F003874FD /* MessagesView.swift in Sources */,
+				DDF039382B65BD2000672351 /* ContentSelectionView.swift in Sources */,
 				DD639F932B6516CE003874FD /* DataModel.swift in Sources */,
+				DDF039362B65B03200672351 /* Date+Ext.swift in Sources */,
 				DD639F862B65167F003874FD /* StatisticsView.swift in Sources */,
+				DDF0393A2B65BDB000672351 /* CoursesView.swift in Sources */,
 				DD639F8F2B65167F003874FD /* SignUpView.swift in Sources */,
 				DD639F8C2B65167F003874FD /* PostsView.swift in Sources */,
 				DD639F882B65167F003874FD /* WelcomeView.swift in Sources */,

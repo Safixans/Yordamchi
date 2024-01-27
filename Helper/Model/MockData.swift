@@ -69,7 +69,7 @@ let mockPost1 = Post(
                     """, 
     jobLocation: "Tashkent",
     numberOfPeopleNeeded: 4,
-    postStatus: .searching(appliedPeopleIds: nil, acceptedPeopleIds: nil)
+    wage: "3000 dollar", postStatus: .searching(appliedPeopleIds: nil, acceptedPeopleIds: nil)
 )
 let mockPost2 = Post(
     id: UUID().uuidString,
@@ -92,7 +92,7 @@ let mockPost2 = Post(
     startingDate: nil,
     approximateDuration: nil,
     numberOfPeopleNeeded: nil,
-    relevantImages: nil,
+    relevantImages: nil, wage: "2500 dollar",
     postStatus: .searching(appliedPeopleIds: nil, acceptedPeopleIds: nil)
 )
 let mockPost3 = Post(
@@ -122,13 +122,10 @@ let mockPost3 = Post(
 
                     Ish tartibi: 6/1
                     Ish vaqti: 9:00 - 18:00 gacha
-
-                    Oylik maosh: 4 000 000 + 9 000 000 so’mgacha topish imkoniyati
-                    Manzil: Toshkent shahar, Bog’ishamol ko’chasi 260A Sampi Mall savdo markazi
                     """,
     jobLocation: "Tashkent, Yakkasaroy",
     numberOfPeopleNeeded: 4,
-    postStatus: .searching(appliedPeopleIds: nil, acceptedPeopleIds: nil)
+    wage: "500 dollar", postStatus: .searching(appliedPeopleIds: nil, acceptedPeopleIds: nil)
 )
 let mockPost4 = Post(
     id: String(UUID().uuidString),
@@ -145,7 +142,7 @@ let mockPost4 = Post(
                     """,
     jobLocation: "Tashkent, Yakkasaroy",
     numberOfPeopleNeeded: 4,
-    postStatus: .searching(appliedPeopleIds: nil, acceptedPeopleIds: nil)
+    wage: "3000 dollar", postStatus: .searching(appliedPeopleIds: nil, acceptedPeopleIds: nil)
 )
 let mockPost5 = Post(
     id: String(UUID().uuidString),
@@ -164,6 +161,7 @@ let mockPost5 = Post(
                     """,
     jobLocation: "Tashkent, Yakkasaroy",
     numberOfPeopleNeeded: 4,
+    wage: "5000 dollar",
     postStatus: .searching(appliedPeopleIds: nil, acceptedPeopleIds: nil)
 )
 let mockPost6 = Post(
@@ -182,6 +180,7 @@ let mockPost6 = Post(
                     """,
     jobLocation: "Tashkent, Yakkasaroy",
     numberOfPeopleNeeded: 4,
+    wage: "4500 dollar",
     postStatus: .searching(appliedPeopleIds: nil, acceptedPeopleIds: nil)
 )
 let mockPost7 = Post(
@@ -202,6 +201,7 @@ veb-ishlab chiqishni yaxshi ko'ring: frontend va backend.
 
 """,
     jobLocation: "Toshkent, Yakkasaroy",
+    wage: "4000 dollar",
     postStatus: .searching(appliedPeopleIds: nil, acceptedPeopleIds: nil)
 )
 let mockPost8 = Post(
@@ -219,6 +219,7 @@ MALAKAVIY TALABLAR
 
 """,
     jobLocation: "Toshkent, Chilonzor",
+    wage: "7000 dollar",
     postStatus: .searching(appliedPeopleIds: nil, acceptedPeopleIds: nil)
 )
 let mockPost9 = Post(
@@ -234,7 +235,7 @@ Kompyuterdagi dasturiy majmualar - Microsoft Word, Exsel va Power Point dasturla
 Rus va ingliz tillarini bilishi ustunlik beradi.
 """,
     jobLocation: "Toshkent, Yakkasaroy",
-    postStatus: .searching(appliedPeopleIds: nil, acceptedPeopleIds: nil)
+    wage: "800 dollar", postStatus: .searching(appliedPeopleIds: nil, acceptedPeopleIds: nil)
 )
 let mockPost10 = Post(
     id: UUID().uuidString,
@@ -250,7 +251,7 @@ Sohaga oid normativ-huquqiy hujjatlarni bilishi. Davlat organlari va tashkilotla
 kadrlar sohasiga oid buyruq, bayon, chora-tadbirlar rejasi va boshqa hujjatlar loyihalarini ishlab chiqish;
 """,
     jobLocation: "Toshkent, Yangi Hayot",
-    postStatus: .searching(appliedPeopleIds: nil, acceptedPeopleIds: nil)
+    wage: "1500 dollar", postStatus: .searching(appliedPeopleIds: nil, acceptedPeopleIds: nil)
 )
 
 let mockQuicHelp1 = QuickHelp(

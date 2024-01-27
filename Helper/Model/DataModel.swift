@@ -33,6 +33,7 @@ struct Post: Codable {
     var approximateDuration: Int?
     var numberOfPeopleNeeded: Int?
     var relevantImages: [String]?
+    var wage: String
     var postStatus: PostStatus
 }
 

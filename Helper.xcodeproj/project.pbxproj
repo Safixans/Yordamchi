@@ -183,9 +183,9 @@
 				1019997D2B5FCED4002ECC59 /* HelperApp.swift */,
 				DD639F642B64E9B0003874FD /* AppDelegate.swift */,
 				DD639F2B2B64E741003874FD /* GoogleService-Info.plist */,
+				101999812B5FCED6002ECC59 /* Assets.xcassets */,
 				DD639F662B65167E003874FD /* Screens */,
 				DDC29D8B2B642A0900B4CE51 /* JSONFiles */,
-				101999812B5FCED6002ECC59 /* Assets.xcassets */,
 				101999832B5FCED6002ECC59 /* Preview Content */,
 			);
 			path = Helper;
@@ -202,16 +202,16 @@
 		DD639F662B65167E003874FD /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				DD639F752B65167E003874FD /* WelcomeView.swift */,
+				DD639F7E2B65167F003874FD /* SignUpView.swift */,
+				DD639F702B65167E003874FD /* LogInView.swift */,
 				DD639F672B65167E003874FD /* HelperTabView.swift */,
 				DD639F682B65167E003874FD /* Home */,
 				DD639F6D2B65167E003874FD /* Chat */,
-				DD639F702B65167E003874FD /* LogInView.swift */,
 				DD639F712B65167E003874FD /* Library */,
 				DD639F732B65167E003874FD /* Search */,
-				DD639F752B65167E003874FD /* WelcomeView.swift */,
 				DD639F762B65167E003874FD /* Profile */,
 				DD639F7B2B65167E003874FD /* Create */,
-				DD639F7E2B65167F003874FD /* SignUpView.swift */,
 			);
 			name = Screens;
 			path = ../../../Downloads/Archive/Screens;

@@ -12,8 +12,9 @@ import Foundation
 struct Profile: Codable {
     var id: String
     
-    var profilePhoto: Data?
+    var profilePhoto: String?
     var fullName: String
+    var bio: String
     var location: String
     var phoneNumber: String
     var role: Role

@@ -9,6 +9,19 @@ import Foundation
 
 //MARK: - structs
 
+struct LearnModel:Identifiable{
+    var id = UUID()
+    var videoImage:String
+    var videoTitle:String
+    var publisher:String
+    var publisherImage:String
+    var videoURL:String
+}
+struct OfferModel{
+    var name:String
+    var description:String
+    var salary:String
+}
 struct Profile: Codable {
     var id: String
     

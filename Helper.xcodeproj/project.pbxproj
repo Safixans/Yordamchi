@@ -42,11 +42,10 @@
 		DD639F7F2B65167F003874FD /* HelperTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD639F672B65167E003874FD /* HelperTabView.swift */; };
 		DD639F802B65167F003874FD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD639F692B65167E003874FD /* HomeView.swift */; };
 		DD639F812B65167F003874FD /* InDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD639F6A2B65167E003874FD /* InDetailView.swift */; };
-		DD639F822B65167F003874FD /* en.xcloc in Resources */ = {isa = PBXBuildFile; fileRef = DD639F6C2B65167E003874FD /* en.xcloc */; };
 		DD639F832B65167F003874FD /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD639F6E2B65167E003874FD /* MessagesView.swift */; };
 		DD639F842B65167F003874FD /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD639F6F2B65167E003874FD /* ChatView.swift */; };
 		DD639F852B65167F003874FD /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD639F702B65167E003874FD /* LogInView.swift */; };
-		DD639F862B65167F003874FD /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD639F722B65167E003874FD /* ResourcesView.swift */; };
+		DD639F862B65167F003874FD /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD639F722B65167E003874FD /* StatisticsView.swift */; };
 		DD639F872B65167F003874FD /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD639F742B65167E003874FD /* SearchView.swift */; };
 		DD639F882B65167F003874FD /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD639F752B65167E003874FD /* WelcomeView.swift */; };
 		DD639F892B65167F003874FD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD639F772B65167E003874FD /* ProfileView.swift */; };
@@ -75,6 +74,7 @@
 		DDC29DAA2B642A2300B4CE51 /* Qoraqalpog'iston Respublikasi.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D9A2B642A2300B4CE51 /* Qoraqalpog'iston Respublikasi.json */; };
 		DDC29DAB2B642A2300B4CE51 /* Toshkent shahri.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC29D9B2B642A2300B4CE51 /* Toshkent shahri.json */; };
 		DDC29DAE2B643C5800B4CE51 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = DDC29DAD2B643C5800B4CE51 /* SwiftyJSON */; };
+		DDF039332B6562C500672351 /* LearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF039322B6562C500672351 /* LearnView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,11 +87,10 @@
 		DD639F672B65167E003874FD /* HelperTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperTabView.swift; sourceTree = "<group>"; };
 		DD639F692B65167E003874FD /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DD639F6A2B65167E003874FD /* InDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InDetailView.swift; sourceTree = "<group>"; };
-		DD639F6C2B65167E003874FD /* en.xcloc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = en.xcloc; sourceTree = "<group>"; };
 		DD639F6E2B65167E003874FD /* MessagesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		DD639F6F2B65167E003874FD /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		DD639F702B65167E003874FD /* LogInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
-		DD639F722B65167E003874FD /* ResourcesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
+		DD639F722B65167E003874FD /* StatisticsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
 		DD639F742B65167E003874FD /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		DD639F752B65167E003874FD /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		DD639F772B65167E003874FD /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -119,6 +118,7 @@
 		DDC29D992B642A2300B4CE51 /* Andijon viloyati.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Andijon viloyati.json"; sourceTree = "<group>"; };
 		DDC29D9A2B642A2300B4CE51 /* Qoraqalpog'iston Respublikasi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Qoraqalpog'iston Respublikasi.json"; sourceTree = "<group>"; };
 		DDC29D9B2B642A2300B4CE51 /* Toshkent shahri.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Toshkent shahri.json"; sourceTree = "<group>"; };
+		DDF039322B6562C500672351 /* LearnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,11 +179,11 @@
 		1019997C2B5FCED4002ECC59 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				DD639F902B6516CE003874FD /* Model */,
 				1019997D2B5FCED4002ECC59 /* HelperApp.swift */,
 				DD639F642B64E9B0003874FD /* AppDelegate.swift */,
 				DD639F2B2B64E741003874FD /* GoogleService-Info.plist */,
 				101999812B5FCED6002ECC59 /* Assets.xcassets */,
+				DD639F902B6516CE003874FD /* Model */,
 				DD639F662B65167E003874FD /* Screens */,
 				DDC29D8B2B642A0900B4CE51 /* JSONFiles */,
 				101999832B5FCED6002ECC59 /* Preview Content */,
@@ -208,7 +208,7 @@
 				DD639F672B65167E003874FD /* HelperTabView.swift */,
 				DD639F682B65167E003874FD /* Home */,
 				DD639F6D2B65167E003874FD /* Chat */,
-				DD639F712B65167E003874FD /* Library */,
+				DD639F712B65167E003874FD /* Statistics */,
 				DD639F732B65167E003874FD /* Search */,
 				DD639F762B65167E003874FD /* Profile */,
 				DD639F7B2B65167E003874FD /* Create */,
@@ -222,17 +222,9 @@
 			children = (
 				DD639F692B65167E003874FD /* HomeView.swift */,
 				DD639F6A2B65167E003874FD /* InDetailView.swift */,
-				DD639F6B2B65167E003874FD /* Helper Localizations */,
+				DDF039322B6562C500672351 /* LearnView.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		DD639F6B2B65167E003874FD /* Helper Localizations */ = {
-			isa = PBXGroup;
-			children = (
-				DD639F6C2B65167E003874FD /* en.xcloc */,
-			);
-			path = "Helper Localizations";
 			sourceTree = "<group>";
 		};
 		DD639F6D2B65167E003874FD /* Chat */ = {
@@ -244,12 +236,12 @@
 			path = Chat;
 			sourceTree = "<group>";
 		};
-		DD639F712B65167E003874FD /* Library */ = {
+		DD639F712B65167E003874FD /* Statistics */ = {
 			isa = PBXGroup;
 			children = (
-				DD639F722B65167E003874FD /* ResourcesView.swift */,
+				DD639F722B65167E003874FD /* StatisticsView.swift */,
 			);
-			path = Library;
+			path = Statistics;
 			sourceTree = "<group>";
 		};
 		DD639F732B65167E003874FD /* Search */ = {
@@ -422,7 +414,6 @@
 				DDC29DA72B642A2300B4CE51 /* Xorazm viloyati.json in Resources */,
 				DDC29DA62B642A2300B4CE51 /* Navoiy viloyati.json in Resources */,
 				DDC29DA32B642A2300B4CE51 /* Samarqand viloyati.json in Resources */,
-				DD639F822B65167F003874FD /* en.xcloc in Resources */,
 				101999822B5FCED6002ECC59 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD639F8E2B65167F003874FD /* CreateView.swift in Sources */,
+				DDF039332B6562C500672351 /* LearnView.swift in Sources */,
 				DD639F652B64E9B0003874FD /* AppDelegate.swift in Sources */,
 				DD639F8D2B65167F003874FD /* CreateViewModel.swift in Sources */,
 				DD639F8A2B65167F003874FD /* CompanyProfileView.swift in Sources */,
@@ -450,7 +442,7 @@
 				DD639F852B65167F003874FD /* LogInView.swift in Sources */,
 				DD639F832B65167F003874FD /* MessagesView.swift in Sources */,
 				DD639F932B6516CE003874FD /* DataModel.swift in Sources */,
-				DD639F862B65167F003874FD /* ResourcesView.swift in Sources */,
+				DD639F862B65167F003874FD /* StatisticsView.swift in Sources */,
 				DD639F8F2B65167F003874FD /* SignUpView.swift in Sources */,
 				DD639F8C2B65167F003874FD /* PostsView.swift in Sources */,
 				DD639F882B65167F003874FD /* WelcomeView.swift in Sources */,
@@ -512,7 +504,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -569,7 +561,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -590,11 +582,13 @@
 				DEVELOPMENT_TEAM = 4RUKJ5BRNZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Yordamchi;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -619,11 +613,13 @@
 				DEVELOPMENT_TEAM = 4RUKJ5BRNZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Yordamchi;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

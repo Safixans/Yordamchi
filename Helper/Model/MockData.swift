@@ -8,6 +8,30 @@
 import Foundation
 let posts = [mockPost1, mockPost2, mockPost3, mockPost4, mockPost5, mockPost6, mockPost7]
 let govPosts = [mockPost8, mockPost9, mockPost10]
+
+var MockLearnDatas = [
+    LearnModel(
+        videoImage: "wordTutorial",
+        videoTitle: "Microsoft Word 1 dars Dastur bilan tanishuv Asosiy sozlamalar Qo'shimcha kengaytmalar o'rnatish",
+        publisher: "Samarqand davlat universiteti Kattaqo‘rg‘on filiali",
+        publisherImage: "wordMaker", 
+        videoURL: "https://youtu.be/GOU2_-8o1rI?feature=shared"
+    ),
+    LearnModel(
+        videoImage: "excelTutorial",
+        videoTitle: "1 ДАРС. EXCEL БИЛАН УМУМИЙ ТАНИШУВ. EXCEL БОШЛОВЧИЛАР УЧУН",
+        publisher: "AkaExcel",
+        publisherImage: "excelMaker",
+        videoURL: "https://youtu.be/ujj_zLZfvYo?feature=shared"
+    ),
+    LearnModel(
+        videoImage: "powerPointTutorial",
+        videoTitle: "MS Power Point dasturini 1 soatda o'rganish | Taqdimot yaratish",
+        publisher: "Kompyuter texnologiyalari, Axborot texnologiyalari",
+        publisherImage: "powerPointMaker",
+        videoURL: "https://youtu.be/aOwVwDHrdwQ?feature=shared"
+    )
+]
 let mockProfile1 = Profile(
     id: String(UUID().uuidString),
     profilePhoto: "mockPhoto1",
@@ -218,8 +242,8 @@ MALAKAVIY TALABLAR
 5. O'zbekiston Respublikasining 2022 yil 8 avgustdagi "Davlat fuqarolik xizmati to'g'risida"gi 788-son qonunning 28-moddasida keltirilgan ta'lablar.
 
 """,
-    jobLocation: "Toshkent, Chilonzor",
-    wage: "7000 dollar",
+    jobLocation: "Qashaqadaryo, Kasbi",
+    wage: "Shtat jadvali bo‘yicha",
     postStatus: .searching(appliedPeopleIds: nil, acceptedPeopleIds: nil)
 )
 let mockPost9 = Post(

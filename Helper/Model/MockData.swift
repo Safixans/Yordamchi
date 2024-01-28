@@ -6,10 +6,10 @@
 //
 
 import Foundation
-let posts = [mockPost1, mockPost2, mockPost3, mockPost4, mockPost5, mockPost6, mockPost7]
-let govPosts = [mockPost8, mockPost9, mockPost10]
+let posts = [mockPost1]
+let govPosts = [mockPost8]
 
-var VideoMockData = [
+var VideoMockDaForGov = [
     VideoModel(
         videoImage: "wordTutorial",
         videoTitle: "Microsoft Word 1 dars Dastur bilan tanishuv Asosiy sozlamalar Qo'shimcha kengaytmalar o'rnatish",
@@ -32,7 +32,23 @@ var VideoMockData = [
         videoURL: "https://youtu.be/aOwVwDHrdwQ?feature=shared"
     )
 ]
-var CourseMockData = [
+var VideoMockDaForJava = [
+    VideoModel(
+        videoImage: "Java",
+        videoTitle: "Java Dasturlash Tili haqida suhbatlashamiz",
+        publisher: "Najot Ta'lim",
+        publisherImage: "ntImage",
+        videoURL: "https://www.youtube.com/watch?v=VNmlENaOQ-w"
+    ),
+    VideoModel(
+        videoImage: "broCode",
+        videoTitle: "Java Dasturlash Tili to'liq kurs",
+        publisher: "Bro Code",
+        publisherImage: "bCode",
+        videoURL: "https://www.youtube.com/watch?v=xk4_1vDrzzo"
+    )
+]
+var CourseMockDataGov = [
     CourseModel(
         videoImage: "businessCourse",
         videoTitle: "Bosh direktordan biznes darslari",
@@ -45,6 +61,15 @@ var CourseMockData = [
         publisher: "Mark Timberlake",
         videoURL: "https://www.udemy.com/course/the-mind-of-an-entrepreneur-think-your-way-to-wealth/"
     )
+]
+var CourseMockDataJava = [
+    CourseModel(
+        videoImage: "udemyJava",
+        videoTitle: "Java 17 Masterklas",
+        publisher: "Tim Buchalka",
+        videoURL: "https://www.udemy.com/course/java-the-complete-java-developer-course/"
+    ),
+    
 ]
 var epamMockData = [
     MessageModel(

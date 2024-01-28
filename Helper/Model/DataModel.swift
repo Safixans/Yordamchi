@@ -24,7 +24,8 @@ struct CourseModel:Identifiable{
     var publisher:String
     var videoURL:String
 }
-struct OfferModel{
+struct OfferModel:Identifiable{
+    var id = UUID()
     var name:String
     var description:String
     var salary:String

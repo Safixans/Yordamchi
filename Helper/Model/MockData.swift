@@ -93,9 +93,9 @@ var argosMockData = [
 let mockProfile1 = Profile(
     id: String(UUID().uuidString),
     profilePhoto: "mockPhoto1",
-    fullName: "Asror Aliqulov", bio: "",
-    location: "Toshkent, Yangi Hayot",
-    phoneNumber: "88 888 88 88",
+    fullName: "Safixon Abdusattorov", bio: "",
+    location: "Toshkent",
+    phoneNumber: "97 750 64 64",
     role: .employee(
         currentStatus: .free,
         rating: nil,
